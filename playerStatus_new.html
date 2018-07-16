@@ -166,13 +166,7 @@
 				"dataSrc": ''
 			},  
            "columns"     :     [  
-				{ data: "web_name", "render": function(data, type, row, meta){
-					if(type === 'display'){
-					data = '<a href="' + data + '">' + data + '</a>';
-					}
-
-					return data;
-				}},
+				{ data: "web_name"},
 		        {data: "team_name"},
 			    {data: "position"},
 				{data: "now_cost"},
