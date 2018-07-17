@@ -187,15 +187,9 @@
 				"dataSrc": ''
 			},  
            "columns"     :     [  
-				{ data: "web_name", "render": function(data, type, row, meta){
-					if(type === 'display'){
-					data = '<a href="' + data + '">' + data + '</a>';
-					}
-
-					return data;
-				}},
-		        {data: "teamName"},
-			    {data: "element_type"},
+				{ data: "web_name"},
+		        {data: "team_name"},
+			    {data: "position"},
 				{data: "goals_scored"},
 				{data: "assists"},
 				{data: "clean_sheets"},
