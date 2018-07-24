@@ -115,13 +115,16 @@
                           <tr>  
                                <th>Player</th>  
                                <th>Team</th>  
-                               <th>Position</th>  
-							   <th>Cost</th>
-							   <th>Status</th>
+                               <th>Position</th>  							   				
 							   <th>Minutes</th>  
-                               <th>Pts.</th>  
+							   <th>Goals</th>  
+							   <th>Assists</th>  
+							   <th>CS</th>  
+							   <th>Pts./game</th>  
+                               <th>Total Pts.</th>  
 							   <th>Bonus</th>  
-                               <th>Pts./game</th>  
+							   <th>Price</th>  
+                               <th>Price Change</th>  
 							   <th>Ownership %</th>  
                           </tr>  
                      </thead>  
@@ -166,48 +169,35 @@
 				
      </div>
    </div>		
-
   
-
-</body>
-</html>
-
-
+  
+  
+  
  <script>  
  $(document).ready(function(){  
  
  var myTable = $('#data-table').DataTable({  
            "ajax": {
-				"url": "https://s3.eu-central-1.amazonaws.com/fpl.data/history/201718.json",
+				"url": "db/history201718.json",
 				"dataSrc": ''
 			},  
            "columns"     :     [  
-				{ data: "web_name"},
+				{data: "web_name"},
 		        {data: "team_name"},
-			    {data: "position"},
-				{data: "now_cost"},
-				{data: "status"},
-				{data: "minutes"},
-                {data: "total_points"},
-				{data: "bonus"},
+			    {data: "element_type"},
+				{data: "minutes"},				
+				{data: "goals_scored"},
+				{data: "assists"},
+				{data: "clean_sheets"},                			
 				{data: "points_per_game"},
+				{data: "total_points"},
+				{data: "bonus"},
+				{data: "now_cost"},
+				{data: "cost_change_start"},				
 				{data: "selected_by_percent"}				
            ],
 		
-		rowCallback: function(row, data, index) {
-			if (data.status === "Available") {
-			$("td:eq(4)", row).css('background-color','#99ff9c')
-			}
-			if (data.status === "NotAvail") {
-			$("td:eq(4)", row).css('background-color','#999999')
-			}
-			if (data.status === "Doubtful") {
-			$("td:eq(4)", row).css('background-color','#ffff00')
-			}
-			if (data.status === "Injured") {
-			$("td:eq(4)", row).css('background-color','#ff0000')
-			}
-		}
+		
 		   
       });  
  
@@ -216,13 +206,8 @@
     //{column_number : 0, filter_type: "auto_complete"},
     {column_number : 1},
 	{column_number : 2},
-	{column_number : 3, filter_type: "range_number_slider"},
-	{column_number : 4},
-	{column_number : 5, filter_type: "range_number_slider"},
-	{column_number : 6, filter_type: "range_number_slider"},
-	{column_number : 7, filter_type: "range_number_slider"},
-	{column_number : 8, filter_type: "range_number_slider"},
-	{column_number : 9, filter_type: "range_number_slider"}
+	{column_number : 3, filter_type: "range_number_slider"},		
+	{column_number : 8, filter_type: "range_number_slider"}
 	]);
 	
 	
@@ -231,6 +216,11 @@
  
  </script>
  
+
+</body>
+</html>
+
+
  
 <!-- google analytics script -->
     <script>
