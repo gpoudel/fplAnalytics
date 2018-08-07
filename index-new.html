@@ -202,6 +202,8 @@
         </div>
       </div>
       
+	  
+	  <!--
       <div class="card" style="background-color:#04f5ff;color:black">
 	  <a href="InjuryWatch.html">
       <img class="card-img-top" src="img/InjuryWatch.png" alt="Card image cap">
@@ -213,6 +215,22 @@
 		<a href="InjuryWatch.html" class="btn btn-primary">Open</a>
         </div>
       </div>	  
+	  -->
+	  
+	  <div class="card" style="background-color:#04f5ff;color:black">	  	 
+	    <div class="bs-example" style="background-color:white;font-weight:bold"> <div id="InjuryCloud" class="demo"></div></div>
+        <div class="card-body">
+        <h5 class="card-title">Overnight Injuries/Suspensions</h5>
+        <p class="card-text">Up to date availibilty records of players, tracks availibilty status, chance of playing, News and other indices </p>
+        <p class="card-text"><small class="text-muted">*WordsCloud shows last night's changes</small></p>
+		<a href="InjuryWatch.html" class="btn btn-primary">Open</a>
+        </div>
+        </div>
+      </div>
+	  
+	  
+	  
+	  
 	  
     </div>
 		
@@ -347,6 +365,21 @@ $(document).ready(function(){
     }
   });
 });
+
+
+
+$(document).ready(function(){
+  $.ajax({
+    url: "https://s3.eu-central-1.amazonaws.com/fpl.data/db/injuryStatusChange.json",
+    type: "get",
+    async: false,
+    success: function(data) {      
+      var json = JSON.parse(data);
+      $("#InjuryCloud").jQCloud(json);
+    }
+  });
+});
+
 
 
   </script>
