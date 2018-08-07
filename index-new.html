@@ -342,7 +342,8 @@ $(document).ready(function(){
     type: "get",
     async: false,
     success: function(data) {      
-      $("#wordCloud").jQCloud(data);
+      var json = JSON.parse(data);
+      $("#wordCloud").jQCloud(json);
     }
   });
 });
