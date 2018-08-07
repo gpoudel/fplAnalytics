@@ -11,34 +11,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   
-  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>     
-   <script>
-     zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
-     ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];
-   </script>
-   
-   <style>
-    html,
-    body {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    
-    #myChart {
-      height: 100%;
-      width: 100%;
-      min-height: 150px;
-    }
-    
-    .zc-ref {
-      display: none;
-    }
-  </style>
   
-  <!-- main css -->
-  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <script src="js/jqcloud.min.js"></script>
+    
+	<style>
+	.demo {
+	margin:0 auto;
+	width:450px;
+	height:250px;
+	}	
+
+	#demo-autosize {
+	width:80%;
+	}
+	</style>
+  
  
 </head>
 <body>
@@ -109,18 +96,7 @@
         </ul>
       </li>        	  	 
 	
-    <!--	
-	<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:white">Dropdown</a>
-    <div class="dropdown-menu" style="background-color:#e90052;">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-    </li>
-	  -->
+    
 	  <li class="nav-item">
         <a class="nav-link" href="contact.html" style="color:white;">Contact</a>
       </li>    	
@@ -216,15 +192,12 @@
 	<div class="card-deck mb-3">
       
       
-      <div class="card" style="background-color:#04f5ff;color:black">
-	  <a href="priceTable.html">
-      <!-- <img class="card-img-top" src="img/PriceChange-logo.png" alt="Card image cap"> -->
-	  <div id="myChart"><a class="zc-ref" href="https://www.zingchart.com">Powered by ZingChart</a></div>
-	  </a>
+      <div class="card" style="background-color:#04f5ff;color:black">	  	 
+	    <div class="bs-example" style="background-color:white;font-weight:bold"> <div id="wordCloud" class="demo"></div></div>
         <div class="card-body">
         <h5 class="card-title">Overnight Price Changes</h5>
         <p class="card-text">Up to date price movement records of players, tracking daily, gameweek and season price changes along with other KPIs</p>
-        <p class="card-text"><small class="text-muted">*Image shows last night's changes</small></p>
+        <p class="card-text"><small class="text-muted">*WordsCloud shows last night's changes</small></p>
 		<a href="priceTable.html" class="btn btn-primary">Open</a>
         </div>
       </div>
@@ -236,7 +209,7 @@
         <div class="card-body">
         <h5 class="card-title">Overnight Injuries/Suspensions</h5>
         <p class="card-text">Up to date availibilty records of players, tracks availibilty status, chance of playing, News and other indices </p>
-        <p class="card-text"><small class="text-muted">*Image shows last night's changes</small></p>
+        <p class="card-text"><small class="text-muted">*WordsCloud shows last night's changes</small></p>
 		<a href="InjuryWatch.html" class="btn btn-primary">Open</a>
         </div>
       </div>	  
@@ -328,14 +301,9 @@
 		<a href="treeMap.html" class="btn btn-primary">Open</a>
         </div>
       </div>	     
-	 
+	 	  	 
 	  
-	  
-	  
-	</div>  
-	
-	
-	
+	</div>  		
 	</div>
   
   
@@ -366,17 +334,21 @@
 </footer>
 
 
-<script>    
-			zingchart.render({
-			id: 'myChart',
-			type: 'wordcloud',
-			dataurl:"https://s3.eu-central-1.amazonaws.com/fpl.data/db/priceChange.json",
-			//data: myConfig,
-			height: '100%',
-			width: '100%'
-			});
-		</script>
-  
+ <script type="text/javascript">  
+ 
+$(document).ready(function(){
+  $.ajax({
+    url: "https://s3.eu-central-1.amazonaws.com/gmpctest/wordcloud.json",
+    type: "get",
+    async: false,
+    success: function(data) {      
+      $("#wordCloud").jQCloud(data);
+    }
+  });
+});
+
+
+  </script>
 
   
 
