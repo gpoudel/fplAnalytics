@@ -121,9 +121,12 @@
 							   <th>GW cost change</th>
 							   <th>GW transfers in</th>
 							   <th>GW transfers out</th>
+							   <th>GW predicted Pts.*</th>
                           </tr>  
                      </thead>  
                 </table>    
+  
+  <p style="color:red"><b>* GW predicted Pts.</b> are Official FPL data & not @fplAnalytics' prediction.</p>
   
 </div>
 
@@ -187,7 +190,8 @@
 				{data: "cost_change_start"},
 				{data: "cost_change_event"},
 				{data: "transfers_in_event"},
-				{data: "transfers_out_event"}				
+				{data: "transfers_out_event"},
+				{data: "ep_next"}
            ],		   		  
 		
 		rowCallback: function(row, data, index) {
