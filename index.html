@@ -11,8 +11,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   
-  <!-- main css -->
-  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  
+  <script src="js/jqcloud.min.js"></script>
+    
+	<style>
+	.demo {
+	margin:0 auto;
+	width:450px;
+	height:250px;
+	}	
+
+	#demo-autosize {
+	width:80%;
+	}
+	</style>
+  
  
 </head>
 <body>
@@ -83,18 +96,7 @@
         </ul>
       </li>        	  	 
 	
-    <!--	
-	<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:white">Dropdown</a>
-    <div class="dropdown-menu" style="background-color:#e90052;">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-    </li>
-	  -->
+    
 	  <li class="nav-item">
         <a class="nav-link" href="contact.html" style="color:white;">Contact</a>
       </li>    	
@@ -189,18 +191,19 @@
 	
 	<div class="card-deck mb-3">
       
-      <div class="card" style="background-color:#04f5ff;color:black">
-	  <a href="priceTable.html">
-      <img class="card-img-top" src="img/PriceChange-logo.png" alt="Card image cap">
-	  </a>
+      
+      <div class="card" style="background-color:#04f5ff;color:black">	  	 
+	    <div class="bs-example" style="background-color:white;font-weight:bold"> <div id="wordCloud" class="demo"></div></div>
         <div class="card-body">
         <h5 class="card-title">Overnight Price Changes</h5>
         <p class="card-text">Up to date price movement records of players, tracking daily, gameweek and season price changes along with other KPIs</p>
-        <p class="card-text"><small class="text-muted">*Image shows last night's changes</small></p>
+        <p class="card-text"><small class="text-muted">*WordsCloud shows last night's changes</small></p>
 		<a href="priceTable.html" class="btn btn-primary">Open</a>
         </div>
       </div>
       
+	  
+	  <!--
       <div class="card" style="background-color:#04f5ff;color:black">
 	  <a href="InjuryWatch.html">
       <img class="card-img-top" src="img/InjuryWatch.png" alt="Card image cap">
@@ -208,10 +211,26 @@
         <div class="card-body">
         <h5 class="card-title">Overnight Injuries/Suspensions</h5>
         <p class="card-text">Up to date availibilty records of players, tracks availibilty status, chance of playing, News and other indices </p>
-        <p class="card-text"><small class="text-muted">*Image shows last night's changes</small></p>
+        <p class="card-text"><small class="text-muted">*WordsCloud shows last night's changes</small></p>
 		<a href="InjuryWatch.html" class="btn btn-primary">Open</a>
         </div>
       </div>	  
+	  -->
+	  
+	  <div class="card" style="background-color:#04f5ff;color:black">	  	 
+	    <div class="bs-example" style="background-color:white;font-weight:bold"> <div id="InjuryCloud" class="demo"></div></div>
+        <div class="card-body">
+        <h5 class="card-title">Overnight Injuries/Suspensions</h5>
+        <p class="card-text">Up to date availibilty records of players, tracks availibilty status, chance of playing, News and other indices </p>
+        <p class="card-text"><small class="text-muted">*WordsCloud shows last night's changes</small></p>
+		<a href="InjuryWatch.html" class="btn btn-primary">Open</a>
+        </div>
+        </div>
+      </div>
+	  
+	  
+	  
+	  
 	  
     </div>
 		
@@ -300,14 +319,9 @@
 		<a href="treeMap.html" class="btn btn-primary">Open</a>
         </div>
       </div>	     
-	 
+	 	  	 
 	  
-	  
-	  
-	</div>  
-	
-	
-	
+	</div>  		
 	</div>
   
   
@@ -337,6 +351,38 @@
     </div>
 </footer>
 
+
+ <script type="text/javascript">  
+ 
+$(document).ready(function(){
+  $.ajax({
+    url: "https://s3.eu-central-1.amazonaws.com/fpl.data/db/priceChange.json",
+    type: "get",
+    async: false,
+    success: function(data) {      
+      var json = JSON.parse(data);
+      $("#wordCloud").jQCloud(json);
+    }
+  });
+});
+
+
+
+$(document).ready(function(){
+  $.ajax({
+    url: "https://s3.eu-central-1.amazonaws.com/fpl.data/db/injuryStatusChange.json",
+    type: "get",
+    async: false,
+    success: function(data) {      
+      var json = JSON.parse(data);
+      $("#InjuryCloud").jQCloud(json);
+    }
+  });
+});
+
+
+
+  </script>
 
   
 
