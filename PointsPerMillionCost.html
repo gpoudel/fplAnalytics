@@ -222,7 +222,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 	
 	var trace1 = {
 		x: mid_points,
-		y: mid_minutes,		
+		y: mid_points_per_cost,		
 		mode: 'markers',
 		name: 'MID',	
 		text: mid_htext, //mid_points_per_cost,
@@ -234,7 +234,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		
 	var trace2 = {
 		x: fwd_points,
-		y: fwd_minutes,		
+		y: fwd_points_per_cost,		
 		mode: 'markers',
 		name: 'FWD',
 		text: fwd_htext,
@@ -246,7 +246,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 
 	var trace3 = {
 		x: def_points,
-		y: def_minutes,		
+		y: def_points_per_cost,		
 		mode: 'markers',
 		name: 'DEF',
 		text: def_htext,
@@ -258,7 +258,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		
 	var trace4 = {
 		x: gkp_points,
-		y: gkp_minutes,		
+		y: gkp_points_per_cost,		
 		mode: 'markers',
 		name: 'GKP',
 		text: gkp_htext,
@@ -280,10 +280,11 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 				zeroline: false
 				},
 			yaxis: {
-				title: 'Minutes played',
+				title: 'Points per million cost',
 				showgrid: true,
 				showline: false
-			}
+			},
+		hovermode: 'closest'
 		
 		};
 
