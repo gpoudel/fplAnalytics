@@ -184,7 +184,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		if (json[i].position == "MID") {
 		mid_points.push(json[i].total_points);    
 		mid_minutes.push(json[i].minutes);    
-		mid_points_per_cost.push((json[i].total_points / json[i].now_cost).toFixed(2) * 2);    
+		mid_points_per_cost.push((json[i].total_points / json[i].now_cost).toFixed(2));    
 		//mid_name.push(json[i].web_name);    
 		mid_htext.push(json[i].web_name + " : "+ (json[i].total_points / json[i].now_cost).toFixed(2));
 		}
@@ -192,7 +192,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		if (json[i].position == "FWD") {
 		fwd_points.push(json[i].total_points);    
 		fwd_minutes.push(json[i].minutes);    
-		fwd_points_per_cost.push((json[i].total_points / json[i].now_cost).toFixed(2) * 2);    
+		fwd_points_per_cost.push((json[i].total_points / json[i].now_cost).toFixed(2));    
 		//fwd_name.push(json[i].web_name);    
 		fwd_htext.push(json[i].web_name + " : "+ (json[i].total_points / json[i].now_cost).toFixed(2));
 		}
@@ -200,7 +200,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		if (json[i].position == "DEF") {
 		def_points.push(json[i].total_points);    
 		def_minutes.push(json[i].minutes);    
-		def_points_per_cost.push((json[i].total_points / json[i].now_cost).toFixed(2) * 2);    
+		def_points_per_cost.push((json[i].total_points / json[i].now_cost).toFixed(2));    
 		//def_name.push(json[i].web_name);    
 		def_htext.push(json[i].web_name + " : "+ (json[i].total_points / json[i].now_cost).toFixed(2));
 		}
@@ -208,7 +208,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		if (json[i].position == "GKP") {
 		gkp_points.push(json[i].total_points);    
 		gkp_minutes.push(json[i].minutes);    
-		gkp_points_per_cost.push((json[i].total_points / json[i].now_cost).toFixed(2) * 2);    
+		gkp_points_per_cost.push((json[i].total_points / json[i].now_cost).toFixed(2));    
 		//gkp_name.push(json[i].web_name);    
 		gkp_htext.push(json[i].web_name + " : "+ (json[i].total_points / json[i].now_cost).toFixed(2));
 		}
@@ -227,7 +227,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		name: 'MID',	
 		text: mid_htext, //mid_points_per_cost,
 		marker: {
-			size: mid_points_per_cost,
+			size: 20,
 			color: '#33cc33',			
 			}
 		};
@@ -239,7 +239,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		name: 'FWD',
 		text: fwd_htext,
 		marker: {
-			size: fwd_points_per_cost,
+			size: 20,
 			color: '#ff00ff',
 			}
 		};
@@ -251,7 +251,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		name: 'DEF',
 		text: def_htext,
 		marker: {
-			size: def_points_per_cost,
+			size: 20,
 			color: '#ff0000',
 			}
 		};
@@ -263,7 +263,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		name: 'GKP',
 		text: gkp_htext,
 		marker: {
-			size: gkp_points_per_cost,
+			size: 20,
 			color: '#0099ff',
 			}
 		};
