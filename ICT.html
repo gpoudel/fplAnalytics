@@ -174,25 +174,25 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		
 		if (json[i].position == "MID") {		
         mid_total_points.push(json[i].total_points);   
-		mid_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2) * 2);    
+		mid_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2));    
 		mid_htext.push(json[i].web_name + " : "+ (json[i].ict_index / json[i].now_cost).toFixed(2));
 		}
 			
 		if (json[i].position == "FWD") {		
         fwd_total_points.push(json[i].total_points);   
-		fwd_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2) * 2);    
+		fwd_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2));    
 		fwd_htext.push(json[i].web_name + " : "+ (json[i].ict_index / json[i].now_cost).toFixed(2));
 		}
 		
 		if (json[i].position == "DEF") {		
         def_total_points.push(json[i].total_points);   
-		def_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2) * 2);    
+		def_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2));    
 		def_htext.push(json[i].web_name + " : "+ (json[i].ict_index / json[i].now_cost).toFixed(2));
 		}
 		
 		if (json[i].position == "GKP") {		
         gkp_total_points.push(json[i].total_points);   
-		gkp_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2) * 2);    
+		gkp_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2));    
 		gkp_htext.push(json[i].web_name + " : "+ (json[i].ict_index / json[i].now_cost).toFixed(2));
 		}
 		
