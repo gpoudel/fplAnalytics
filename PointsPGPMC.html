@@ -100,7 +100,7 @@
 
 
 <div class="container-fluid text-center" style="background-color:#00FF87;color:#38003C">  
-  <h2>Players' Pts. per Cost</h2> 
+  <h3>Players' Pts. per Game per Cost</h2> 
 </div>
   
 
@@ -158,51 +158,58 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 	var mid_minutes = [];
 	var mid_points_per_cost = [];	
 	var mid_htext = [];
+	var mid_points = [];
 	
 	var fwd_points_per_game = [];
 	var fwd_minutes = [];
 	var fwd_points_per_cost = [];	
 	var fwd_htext = [];
+	var fwd_points = [];
 	
 	var def_points_per_game = [];
 	var def_minutes = [];
 	var def_points_per_cost = [];	
 	var def_htext = [];
+	var def_points = [];
 	
 	var gkp_points_per_game = [];
 	var gkp_minutes = [];
 	var gkp_points_per_cost = [];	
 	var gkp_htext = [];
+	var gkp_points = [];
 	
 	
-
 	for(var i = 0; i < json.length; i++) {
 		
 		if (json[i].position == "MID") {
 		mid_points_per_game.push(json[i].points_per_game);    
 		mid_minutes.push(json[i].minutes);    
-		mid_points_per_cost.push((json[i].points_per_game / json[i].now_cost).toFixed(2) * 50);    		
+		mid_points.push(json[i].total_points);
+		mid_points_per_cost.push((json[i].points_per_game / json[i].now_cost).toFixed(2));    		
 		mid_htext.push(json[i].web_name + " : "+ (json[i].points_per_game / json[i].now_cost).toFixed(2));
 		}
 			
 		if (json[i].position == "FWD") {
 		fwd_points_per_game.push(json[i].points_per_game);    
 		fwd_minutes.push(json[i].minutes);    
-		fwd_points_per_cost.push((json[i].points_per_game / json[i].now_cost).toFixed(2) * 50);    		
+		fwd_points.push(json[i].total_points);   
+		fwd_points_per_cost.push((json[i].points_per_game / json[i].now_cost).toFixed(2));    		
 		fwd_htext.push(json[i].web_name + " : "+ (json[i].points_per_game / json[i].now_cost).toFixed(2));
 		}
 	
 		if (json[i].position == "DEF") {
 		def_points_per_game.push(json[i].points_per_game);    
 		def_minutes.push(json[i].minutes);    
-		def_points_per_cost.push((json[i].points_per_game / json[i].now_cost).toFixed(2) * 50);    		
+		def_points.push(json[i].total_points);   
+		def_points_per_cost.push((json[i].points_per_game / json[i].now_cost).toFixed(2));    		
 		def_htext.push(json[i].web_name + " : "+ (json[i].points_per_game / json[i].now_cost).toFixed(2));
 		}
 			
 		if (json[i].position == "GKP") {
 		gkp_points_per_game.push(json[i].points_per_game);    
 		gkp_minutes.push(json[i].minutes);    
-		gkp_points_per_cost.push((json[i].points_per_game / json[i].now_cost).toFixed(2) * 50);    		
+		gkp_points.push(json[i].total_points);   
+		gkp_points_per_cost.push((json[i].points_per_game / json[i].now_cost).toFixed(2));    		
 		gkp_htext.push(json[i].web_name + " : "+ (json[i].points_per_game / json[i].now_cost).toFixed(2));
 		}
 	}
@@ -211,49 +218,49 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 	var str_title = "Pts. per Cost :"
 	
 	var trace1 = {
-		x: mid_points_per_game,
-		y: mid_minutes,		
+		x: mid_points_per_cost,
+		y: mid_points,		
 		mode: 'markers',
 		name: 'MID',	
 		text: mid_htext, 
 		marker: {
-			size: mid_points_per_cost,
+			size: 20,
 			color: '#33cc33',			
 			}
 		};
 		
 	var trace2 = {
-		x: fwd_points_per_game,
-		y: fwd_minutes,		
+		x: fwd_points_per_cost,
+		y: fwd_points,		
 		mode: 'markers',
 		name: 'FWD',
 		text: fwd_htext,
 		marker: {
-			size: fwd_points_per_cost,
+			size: 20,
 			color: '#ff00ff',
 			}
 		};
 
 	var trace3 = {
-		x: def_points_per_game,
-		y: def_minutes,		
+		x: def_points_per_cost,
+		y: def_points,		
 		mode: 'markers',
 		name: 'DEF',
 		text: def_htext,
 		marker: {
-			size: def_points_per_cost,
+			size: 20,
 			color: '#ff0000',
 			}
 		};
 		
 	var trace4 = {
-		x: gkp_points_per_game,
-		y: gkp_minutes,		
+		x: gkp_points_per_cost,
+		y: gkp_points,		
 		mode: 'markers',
 		name: 'GKP',
 		text: gkp_htext,
 		marker: {
-			size: gkp_points_per_cost,
+			size: 20,
 			color: '#0099ff',
 			}
 		};
@@ -265,15 +272,16 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		title: 'Pts. per Game per million cost',
 		showlegend: true,
 			xaxis: {
-				title: 'PTs. per game',
+				title: 'PTs. per game per million cost',
 				showgrid: true,
 				zeroline: false
 				},
 			yaxis: {
-				title: 'Minutes played',
+				title: 'Total points',
 				showgrid: true,
 				showline: false
-			}
+			},
+		hovermode: 'closest'
 		
 		};
 
