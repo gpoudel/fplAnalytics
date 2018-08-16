@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICT Value Analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/fav.png" type="image/x-icon">
+  
+         
+   <!-- js -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>		         		     
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>        
+        
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>  	   
+   
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	
+   <!-- css -->  
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+   
+   <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css"/>
+  
+</head>
+<body>
+
+
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-md sticky-top navbar-light bg-faded py-0" style="background-color:#38003C;color:white;">
+   
+   
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color:white;">  
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="rounded-circle" width="40" height="40" alt=""></a>
+  
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="background-color:#38003C;color:white;">
+  
+   
+    <ul class="navbar-nav">
+	
+       <li class="dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">Data Tables</a>
+        <ul class="dropdown-menu" style="background-color:#e90052;"> 		 
+            <li class="nav-item">
+                <div class="row" style="width: 200px;">
+                    <ul class="list-unstyled col-md-12">
+                        <li><a class="nav-link" href="playerStatus.html" style="color:white">Players' DB</a></li>
+                        <li><a class="nav-link" href="fdr.html" style="color:white">Fixtures Difficulty</a></li>
+                        <li><a class="nav-link" href="priceTable.html" style="color:white">Price Change</a></li>                   
+                        <li><a class="nav-link" href="InjuryWatch.html" style="color:white">Injuries/Suspensions</a></li>
+                        <li><a class="nav-link" href="ptsBreakdown.html" style="color:white">Points Breakdown</a></li>                       
+                    </ul>                   
+                </div>
+            </li>
+        </ul>
+      </li>     
+	  
+	  <li class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">Visualizations</a>
+        <ul class="dropdown-menu"  style="background-color:#e90052;">
+            <li class="nav-item">
+                <div class="row" style="width: 200px;">
+                    <ul class="list-unstyled col-md-12">
+                        <li><a class="nav-link" href="ICT.html" style="color:white">ICT value</a></li>
+                        <li><a class="nav-link" href="PointsPerMillionCost.html" style="color:white">Points per Cost</a></li>
+                        <li><a class="nav-link" href="TransferAnomaly.html" style="color:white">Transfer Anomaly</a></li>                   
+                        <li><a class="nav-link" href="treeMap.html" style="color:white">Pts. Treemap</a></li>
+                        <li><a class="nav-link" href="PointsPGPMC.html" style="color:white">Pts./game per Cost</a></li>
+                        <li><a class="nav-link" href="PlayerValueChangeSeason.html" style="color:white">Player Value Change</a></li>
+                    </ul>                   
+                </div>
+            </li>
+        </ul>
+      </li>
+	  
+	  <li class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">Historical Data</a>
+         <ul class="dropdown-menu"  style="background-color:#e90052;">
+            <li class="nav-item">
+                <div class="row" style="width: 150px;">
+                    <ul class="list-unstyled col-md-12">
+                        <li><a class="nav-link" href="history1718.html" style="color:white">Season 17/18</a></li>
+                        <li><a class="nav-link" href="history1617.html" style="color:white">Season 16/17</a></li>
+                        <li><a class="nav-link" href="history1516.html" style="color:white">Season 15/16</a></li>     
+			<li><a class="nav-link" href="history1415.html" style="color:white">Season 14/15</a></li> 
+                    </ul>                   
+                </div>
+            </li>
+        </ul>
+      </li>        	  	 
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html" style="color:white;">Contact</a>
+      </li>    	
+	 
+    </ul>
+	
+  </div>    
+</nav>
+
+
+
+<div class="container-fluid text-center" style="background-color:#00FF87;color:#38003C">  
+  <h3>ICT Value Analysis</h3> 
+</div>  
+
+
+  
+  <div class="container">
+
+	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+  
+  </div>
+   
+  </br>
+  </br>	
+	
+  <div id="myDiv" style="width: 90%; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+
+<footer class="mt-5">
+    <div class="container-fluid" style="background-color:#38003C;color:white">     
+	  <p class="text-center">© fplAnalytics.com 2015</p>
+    </div>
+</footer>
+
+
+ <div class="container-fluid">
+   <div class="row mb-2">	
+	 
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>	
+	</div>
+
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>
+	</div>	
+				
+     </div>
+   </div>		
+
+  
+
+</body>
+</html>
+
+ 
+<script>
+
+$.getJSON( "db/playerStatus.json", function(json) {
+  //console.log( "JSON Data: " + json[1].web_name);
+  
+       
+	var mid_ict_per_cost = [];	
+	var mid_total_points = [];
+	var mid_htext = [];
+	
+	var fwd_ict_per_cost = [];	
+	var fwd_total_points = [];
+	var fwd_htext = [];
+	
+	var def_ict_per_cost = [];	
+	var def_total_points = [];
+	var def_htext = [];
+	
+	var gkp_ict_per_cost = [];	
+	var gkp_total_points = [];
+	var gkp_htext = [];
+	
+
+	for(var i = 0; i < json.length; i++) {
+		
+		if (json[i].position == "MID") {		
+        mid_total_points.push(json[i].total_points);   
+		mid_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2));    
+		mid_htext.push(json[i].web_name + " : "+ (json[i].ict_index / json[i].now_cost).toFixed(2));
+		}
+			
+		if (json[i].position == "FWD") {		
+        fwd_total_points.push(json[i].total_points);   
+		fwd_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2));    
+		fwd_htext.push(json[i].web_name + " : "+ (json[i].ict_index / json[i].now_cost).toFixed(2));
+		}
+		
+		if (json[i].position == "DEF") {		
+        def_total_points.push(json[i].total_points);   
+		def_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2));    
+		def_htext.push(json[i].web_name + " : "+ (json[i].ict_index / json[i].now_cost).toFixed(2));
+		}
+		
+		if (json[i].position == "GKP") {		
+        gkp_total_points.push(json[i].total_points);   
+		gkp_ict_per_cost.push((json[i].ict_index / json[i].now_cost).toFixed(2));    
+		gkp_htext.push(json[i].web_name + " : "+ (json[i].ict_index / json[i].now_cost).toFixed(2));
+		}
+		
+	}
+	
+	
+	var trace1 = {
+		x: mid_ict_per_cost,
+		y: mid_total_points,		
+		mode: 'markers',
+		name: 'MID',	
+		text: mid_htext,
+		marker: {
+			size: 20,
+			color: '#33cc33',			
+			}
+		};
+		
+		
+	var trace2 = {
+		x: fwd_ict_per_cost,
+		y: fwd_total_points,		
+		mode: 'markers',
+		name: 'FWD',	
+		text: fwd_htext,
+		marker: {
+			size: 20,
+			color: '#ff00ff',			
+			}
+		};	
+    
+	var trace3 = {
+		x: def_ict_per_cost,
+		y: def_total_points,		
+		mode: 'markers',
+		name: 'DEF',	
+		text: def_htext,
+		marker: {
+			size: 20,
+			color: '#ff0000',			
+			}
+		};	
+
+	var trace4 = {
+		x: gkp_ict_per_cost,
+		y: gkp_total_points,		
+		mode: 'markers',
+		name: 'GKP',	
+		text: gkp_htext,
+		marker: {
+			size: 20,
+			color: '#0099ff',			
+			}
+		};	
+		
+		
+	var data = [trace1, trace2, trace3, trace4];
+
+	var layout = {
+		title: 'ICT per cost',
+		showlegend: true,
+			xaxis: {
+				title: 'ICT per cost',
+				showgrid: true,
+				zeroline: false
+				},
+			yaxis: {
+				title: 'Total Points',
+				showgrid: true,
+				showline: false
+			}
+		
+		};
+
+Plotly.newPlot('myDiv', data, layout);
+	
+	
+		
+ });
+ 
+
+</script>
+ 
+
+  
+<!-- google analytics script -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-82390542-1', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+ 
+ 
+  
