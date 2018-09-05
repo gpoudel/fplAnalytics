@@ -106,9 +106,9 @@
   
 
 
-<div id="transfers_in" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="transfers_in_event" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 
-<div id="transfers_out" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="transfers_out_event" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 
 
 <footer class="mt-5">
@@ -165,12 +165,12 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 	
 	for(var i = 0; i < json.length; i++) {
 		
-		if (json[i].transfers_in > json[i].transfers_out) {
-		transfers_rate_in.push(json[i].transfers_in - json[i].transfers_out);    
+		if (json[i].transfers_in_event > json[i].transfers_out_event) {
+		transfers_rate_in.push(json[i].transfers_in_event - json[i].transfers_out_event);    
 		transfer_name_in.push(json[i].web_name);
 		} 
 		else {
-		 transfers_rate_out.push(json[i].transfers_out - json[i].transfers_in);    
+		 transfers_rate_out.push(json[i].transfers_out_event - json[i].transfers_in_event);    
 		 transfer_name_out.push(json[i].web_name);
 		 }
 		 
@@ -235,9 +235,9 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		
 		};
 
-Plotly.newPlot('transfers_in', data1, layout1);
+Plotly.newPlot('transfers_in_event', data1, layout1);
 	
-Plotly.newPlot('transfers_out', data2, layout2);	
+Plotly.newPlot('transfers_out_event', data2, layout2);	
 		
  });
  
