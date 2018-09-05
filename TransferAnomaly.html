@@ -106,9 +106,38 @@
   
 
 
-<div id="transfers_in" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="transfers_in_event" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 
-<div id="transfers_out" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+ <div class="container-fluid">
+   <div class="row mb-2">	
+	 
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>	
+	</div>
+
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>
+	</div>	
+				
+     </div>
+   </div>		
+  
+
+
+<div id="transfers_out_event" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 
 
 <footer class="mt-5">
@@ -165,12 +194,12 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 	
 	for(var i = 0; i < json.length; i++) {
 		
-		if (json[i].transfers_in > json[i].transfers_out) {
-		transfers_rate_in.push((json[i].transfers_in / json[i].transfers_out).toFixed(2));    
+		if (json[i].transfers_in_event > json[i].transfers_out_event) {
+		transfers_rate_in.push((json[i].transfers_in_event / json[i].transfers_out_event).toFixed(2));    
 		transfer_name_in.push(json[i].web_name);
 		} 
 		else {
-		 transfers_rate_out.push((json[i].transfers_out / json[i].transfers_in).toFixed(2) * -1);    
+		 transfers_rate_out.push((json[i].transfers_out_event / json[i].transfers_in_event).toFixed(2) * -1);    
 		 transfer_name_out.push(json[i].web_name);
 		 }
 		 
@@ -237,9 +266,9 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		
 		};
 
-Plotly.newPlot('transfers_in', data1, layout1);
+Plotly.newPlot('transfers_in_event', data1, layout1);
 	
-Plotly.newPlot('transfers_out', data2, layout2);	
+Plotly.newPlot('transfers_out_event', data2, layout2);	
 		
  });
  
