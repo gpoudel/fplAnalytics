@@ -64,7 +64,8 @@
                     <ul class="list-unstyled col-md-12">
                         <li><a class="nav-link" href="ICT.html" style="color:white">ICT value</a></li>
                         <li><a class="nav-link" href="PointsPerMillionCost.html" style="color:white">Points per Cost</a></li>
-                        <li><a class="nav-link" href="TransferAnomaly.html" style="color:white">Transfer Anomaly</a></li>                   
+                        <li><a class="nav-link" href="TransferAnomaly.html" style="color:white">Transfer Anomaly</a></li>           
+						<li><a class="nav-link" href="NettTransfers.html" style="color:white">Nett. Transfers - GW</a></li>						
                         <li><a class="nav-link" href="treeMap.html" style="color:white">Pts. Treemap</a></li>
                         <li><a class="nav-link" href="PointsPGPMC.html" style="color:white">Pts./game per Cost</a></li>
                         <li><a class="nav-link" href="PlayerValueChangeSeason.html" style="color:white">Player Value Change</a></li>
@@ -106,9 +107,37 @@
   
 
 
-<div id="transfers_in_event" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="transfers_in_event" style="width: 90%; height: 500px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 
-<div id="transfers_out_event" style="width: 90%; height: 800px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+
+ <div class="container-fluid">
+   <div class="row mb-2">	
+	 
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>	
+	</div>
+
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>
+	</div>	
+				
+     </div>
+   </div>		
+
+<div id="transfers_out_event" style="width: 90%; height: 500px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 
 
 <footer class="mt-5">
@@ -207,7 +236,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 	
 
 	var layout1 = {
-		title: 'Transfers in rate (Transfers in / Transfers out)',
+		title: 'Nett. Transfers in',
 		showlegend: false,
 			xaxis: {				
 				showgrid: true,
@@ -222,7 +251,7 @@ $.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json"
 		
 		
 	var layout2 = {
-		title: 'Transfers out rate (Transfers out / Transfers in)',
+		title: 'Nett. Transfers out',
 		showlegend: false,
 			xaxis: {				
 				showgrid: true,
