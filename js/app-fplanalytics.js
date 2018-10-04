@@ -44,15 +44,15 @@
 
 	// User pool
 	var poolData = {
-			UserPoolId : 'eu-central-1_PxQpaQbgn', // Your user pool id here
-			ClientId : '5ut54i7nlf27ci0ec1g4tthg6k' // Your app client id here
+			UserPoolId : 'eu-central-1_3ZD4ClA6Q', // Your user pool id here
+			ClientId : '3akqatqq2j8ml3hp5v3lk7s7j0' // Your app client id here
 	};
 
 	// Your identity pool id here
-	var identityPoolId = "eu-central-1:37f885b2-0277-4f07-b4e5-358a6829d5a6"
+	var identityPoolId = "eu-central-1:b64e904a-3c3d-490b-acf2-6fda071d6133"
 
 	// Cognito Sync store name
-	var cognitoDatasetName = "footyVisison-users";
+	var cognitoDatasetName = "fplanalytics-users";
 
 	var cognitoUser, identityId, cognitosync;
 
@@ -79,7 +79,7 @@
 					Value : $('#inputPreferredUsername').val()
 			},			
 			{
-					Name : 'custom:fpl_ID',
+					Name : 'custom:fpl_id',
 					Value : $('#inputFplId').val()
 			}
 		];
@@ -159,7 +159,7 @@
 			IdentityPoolId: identityPoolId,
 			Logins : {
 				// Change the key below according to your user pool and region.
-				'cognito-idp.eu-central-1.amazonaws.com/eu-central-1_PxQpaQbgn' : idToken
+				'cognito-idp.eu-central-1.amazonaws.com/eu-central-1_3ZD4ClA6Q' : idToken
 			}
 		});
 		//refreshes credentials using AWS.CognitoIdentity.getCredentialsForIdentity()
@@ -218,7 +218,7 @@ function updateProfile(){
 
 		var attributes = [			
 			{
-					Name : 'custom:fpl_ID',
+					Name : 'custom:fpl_id',
 					Value : $('#inputFplId2').val()
 			}
 		];
