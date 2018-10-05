@@ -349,7 +349,7 @@ function addRecord(cognitoSyncToken, cognitoSyncCount){
 				'test': 'It worked!'
 			}
 			var temp = JSON.stringify(data);
-			var bucketName = 'footyvision';
+			var bucketName = 'fpl.data';
 	    var objParams = {
 	        Bucket: bucketName,
 	        Key: key,
