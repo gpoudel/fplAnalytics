@@ -35,6 +35,8 @@
             <button id="btnSync" type="button" class="btn btn-info btn-lg">Add Sync Record &raquo;</button>
             <button id="btnS3" type="button" class="btn btn-info btn-lg">Create S3 Object &raquo;</button>
             <a href="#"><p id="forgotPassword" class="text-primary">Forgot password</p></a>
+			<a href="#"> <button id="btnRefresh" type="button" class="btn btn-info btn-lg">Reload data</button></a>			
+			<button type="button" onclick="loadDoc()">Request data</button>
           </p></div>
         </div>
       <!-- </div> -->
@@ -165,6 +167,23 @@
 
     <!-- Where the magic happens! -->
   	<script type="module" src="./js/app.js"></script>
+	
+	
+	
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://hp95qconsl.execute-api.eu-central-1.amazonaws.com/test/", true);
+  xhttp.send();
+}
+</script>
+
+	
 
   </body>
 </html>
