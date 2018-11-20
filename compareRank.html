@@ -141,13 +141,13 @@ display : none;
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
     
   
 </head>
 <body>
 
 
-<!-- NAV BAR -->
 <!-- NAV BAR -->
 <nav class="navbar navbar-expand-md sticky-top navbar-light bg-faded py-0" style="background-color:#38003C;color:white;">
    
@@ -264,7 +264,8 @@ display : none;
   <div class="container">
 	<br>
     <h5> Enter your total points </h5> 
-    <input type="number" id="myPts" maxlength="4" onkeypress="return isNumberKey(event)">  
+    <input type="number" id="myPts" maxlength="4" onkeypress="return isNumberKey(event)"> 
+	<!-- <input type="number" id="myPts"  max="999" onkeypress="return isNumberKey(event)">   -->
     <button>Check</button>
 	
 	<!--
@@ -275,6 +276,13 @@ display : none;
     <div id="newpost">
       <p></p>
     </div>
+	
+	<!--
+	<a class="fab fa-twitter btn btn-lg" target="_blank" href="http://twitter.com/home/?status=YOUR-MESSAGE-HERE">   Share on twitter</a>		
+    -->
+	<br>
+	
+	<div id="haha"></div>
 	
  </div>
  
@@ -291,6 +299,18 @@ $(document).ready(function(){
         //$.getJSON("db/compareRanks.json", function(json){
           
 		   //alert( "your pts. =  " + document.getElementById('myPts').value + ", #1 pts. =  " + json[0].total);
+		   
+		   
+		   	
+		   var tweet_text = "I am: \n" + Math.abs(parseInt(json[0].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts. behind rank 1 \n"
+		                               + Math.abs(parseInt(json[1].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[1].total) ? ' behind' : ' ahead of') + " rank 100 \n"	
+							           + Math.abs(parseInt(json[2].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[2].total) ? ' behind' : ' ahead of') + " rank 1K \n"							            
+									   + Math.abs(parseInt(json[3].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[3].total) ? ' behind' : ' ahead of') + " rank 10K \n"							             										
+									   + Math.abs(parseInt(json[4].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[4].total) ? ' behind' : ' ahead of') + " rank 20K \n"
+							           + Math.abs(parseInt(json[5].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[5].total) ? ' behind' : ' ahead of') + " rank 30K \n" 									
+							           + Math.abs(parseInt(json[6].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[6].total) ? ' behind' : ' ahead of') + " rank 40K \n"
+							           + Math.abs(parseInt(json[7].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[7].total) ? ' behind' : ' ahead of') + " rank 50K \n"	
+         							   + "\n Check yours at https://www.fplanalytics.com/compareRank.html \n";
 		  
 		   var div = document.getElementById("newpost");
 			//div.classList.toggle('hidden'); 		
@@ -308,7 +328,26 @@ $(document).ready(function(){
 							Math.abs(parseInt(json[10].total) - parseInt(document.getElementById('myPts').value)).toString() + "</b> pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[10].total) ? ' <b><font color="red">behind</font></b> rank ' : ' <b>ahead</b> of rank ')  + "<b>200K</b>" + " <br> <b>" + 
 							Math.abs(parseInt(json[11].total) - parseInt(document.getElementById('myPts').value)).toString() + "</b> pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[11].total) ? ' <b><font color="red">behind</font></b> rank ' : ' <b>ahead</b> of rank ')  + "<b>300K</b>" + " <br><br> <b>" + 
 							Math.abs(parseInt(json[12].total) - parseInt(document.getElementById('myPts').value)).toString() + "</b> pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[12].total) ? ' <b><font color="red">behind</font></b> rank ' : ' <b>ahead</b> of rank ')  + "<b>400K</b>" + " <br> <b>" + 
-							Math.abs(parseInt(json[13].total) - parseInt(document.getElementById('myPts').value)).toString() + "</b> pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[13].total) ? ' <b><font color="red">behind</font></b> rank ' : ' <b>ahead</b> of rank ')  + "<b>500K</b>" + " <br> <b>";																													  		  
+							Math.abs(parseInt(json[13].total) - parseInt(document.getElementById('myPts').value)).toString() + "</b> pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[13].total) ? ' <b><font color="red">behind</font></b> rank ' : ' <b>ahead</b> of rank ')  + "<b>500K</b>" + " <br> <b>";
+
+
+
+
+		twttr.widgets.createShareButton(
+		 '/',
+		 document.getElementById('haha'),
+		   {
+            size: "large",		   			
+			text: tweet_text,
+			//url: "https://www.fplanalytics.com/compareRank.html",
+			//hashtags: "fplAnalytics",
+			via: "fplAnalytics"
+			
+		   }	
+		);
+							
+							
+							
         });
 		 
 		
