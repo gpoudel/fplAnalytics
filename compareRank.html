@@ -268,11 +268,7 @@ display : none;
 	<!-- <input type="number" id="myPts"  max="999" onkeypress="return isNumberKey(event)">   -->
     <button>Check</button>
 	
-	<!--
-	<div id="newpost"  class="hidden">
-      <p>This div will be show and hide on button click</p>
-    </div>
-	-->
+
     <div id="newpost">
       <p></p>
     </div>
@@ -282,7 +278,7 @@ display : none;
     -->
 	<br>
 	
-	<div id="haha"></div>
+	<div id="tweetRank"></div>
 	
  </div>
  
@@ -302,14 +298,13 @@ $(document).ready(function(){
 		   
 		   
 		   	
-		   var tweet_text = "I am: \n" + Math.abs(parseInt(json[0].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts. behind rank 1 \n"
-		                               + Math.abs(parseInt(json[1].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[1].total) ? ' behind' : ' ahead of') + " rank 100 \n"	
+		   var tweet_text = "I am: \n" + Math.abs(parseInt(json[0].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts. behind rank 1 \n"		                               
 							           + Math.abs(parseInt(json[2].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[2].total) ? ' behind' : ' ahead of') + " rank 1K \n"							            
 									   + Math.abs(parseInt(json[3].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[3].total) ? ' behind' : ' ahead of') + " rank 10K \n"							             										
-									   + Math.abs(parseInt(json[4].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[4].total) ? ' behind' : ' ahead of') + " rank 20K \n"
-							           + Math.abs(parseInt(json[5].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[5].total) ? ' behind' : ' ahead of') + " rank 30K \n" 									
-							           + Math.abs(parseInt(json[6].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[6].total) ? ' behind' : ' ahead of') + " rank 40K \n"
-							           + Math.abs(parseInt(json[7].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[7].total) ? ' behind' : ' ahead of') + " rank 50K \n"	
+									   + Math.abs(parseInt(json[7].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[7].total) ? ' behind' : ' ahead of') + " rank 50K \n"
+							           + Math.abs(parseInt(json[8].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[8].total) ? ' behind' : ' ahead of') + " rank 100K \n" 									
+							           + Math.abs(parseInt(json[11].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[11].total) ? ' behind' : ' ahead of') + " rank 300K \n"
+							           + Math.abs(parseInt(json[13].total) - parseInt(document.getElementById('myPts').value)).toString() + " pts." + ((parseInt(document.getElementById('myPts').value)) < parseInt(json[13].total) ? ' behind' : ' ahead of') + " rank 500K \n"	
          							   + "\n Check yours at https://www.fplanalytics.com/compareRank.html \n";
 		  
 		   var div = document.getElementById("newpost");
@@ -335,7 +330,7 @@ $(document).ready(function(){
 
 		twttr.widgets.createShareButton(
 		 '/',
-		 document.getElementById('haha'),
+		 document.getElementById('tweetRank'),
 		   {
             size: "large",		   			
 			text: tweet_text,
