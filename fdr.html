@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>FDR - fplAnalytics</title>
+  <title>Fixture Difficulty Ratings | fplAnalytics</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/fav.png" type="image/x-icon">
+  <meta name="Description" content="Fixture difficulty Ratings of fantasy premier league teams for next 10 games."/>
+  <meta name="Keywords" content="fdr, fpl Fixture difficulty ratings"/>
+
   
-         
+   
+   
+   <link rel="icon" href="img/fav.png" type="image/x-icon">  
+   
    <!-- js -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>		         		     
-   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>        
-        
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>  	
-   
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>               
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>  	   
    <script type="text/javascript" src="js/datatables.min.js"></script>     
    <script src="js/jquery.dataTables.yadcf.js"></script>		 
-	
-	
+		
    <!-- css -->  
    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.fplAnalytics.css"/>
@@ -42,7 +44,7 @@
    
     <ul class="navbar-nav">
 	
-      <li class="dropdown">
+       <li class="dropdown">
 	    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">Data Tables</a>
         <ul class="dropdown-menu" style="background-color:#e90052;"> 		 
             <li class="nav-item">
@@ -67,8 +69,7 @@
                     <ul class="list-unstyled col-md-12">
                         <li><a class="nav-link" href="ICT.html" style="color:white">ICT value</a></li>
                         <li><a class="nav-link" href="PointsPerMillionCost.html" style="color:white">Points per Cost</a></li>
-                        <li><a class="nav-link" href="TransferAnomaly.html" style="color:white">Transfer Anomaly</a></li>     
-						<li><a class="nav-link" href="NettTransfers.html" style="color:white">Nett. GW Transfers</a></li>
+                        <li><a class="nav-link" href="TransferAnomaly.html" style="color:white">Transfer Anomaly</a></li>                   
                         <li><a class="nav-link" href="treeMap.html" style="color:white">Pts. Treemap</a></li>
                         <li><a class="nav-link" href="PointsPGPMC.html" style="color:white">Pts./game per Cost</a></li>
                         <li><a class="nav-link" href="PlayerValueChangeSeason.html" style="color:white">Player Value Change</a></li>
@@ -86,43 +87,12 @@
                     <ul class="list-unstyled col-md-12">
                         <li><a class="nav-link" href="history1718.html" style="color:white">Season 17/18</a></li>
                         <li><a class="nav-link" href="history1617.html" style="color:white">Season 16/17</a></li>
-                        <li><a class="nav-link" href="history1516.html" style="color:white">Season 15/16</a></li>       
-			<li><a class="nav-link" href="history1415.html" style="color:white">Season 14/15</a></li>
+                        <li><a class="nav-link" href="history1516.html" style="color:white">Season 15/16</a></li>                                         
                     </ul>                   
                 </div>
             </li>
         </ul>
       </li>        	  	 
-	
-	  <li class="dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">Tools</a>
-         <ul class="dropdown-menu"  style="background-color:#e90052;">
-            <li class="nav-item">
-                <div class="row" style="width: 200px;">
-                    <ul class="list-unstyled col-md-12">
-                        <li><a class="nav-link" href="compareRank.html" style="color:white">Compare Global Rank</a></li>
-                    </ul>                   
-                </div>
-            </li>
-        </ul>
-      </li>   
-	
-    
-	  <li class="dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">More</a>
-         <ul class="dropdown-menu"  style="background-color:#e90052;">
-            <li class="nav-item">
-                <div class="row" style="width: 180px;">
-                    <ul class="list-unstyled col-md-12">
-                        <li><a class="nav-link" href="fleagues.html" style="color:white">Featured Leagues</a></li>
-                    </ul>                   
-                </div>
-            </li>
-        </ul>
-      </li>        	  	 
-	
-	
-	
 	  <li class="nav-item">
         <a class="nav-link" href="contact.html" style="color:white;">Contact</a>
       </li>    	
@@ -135,34 +105,49 @@
 
 
 <div class="container-fluid text-center" style="background-color:#00FF87;color:#38003C">  
-  <!-- <h2 class="display-3">Top 100 Managers</h2>  --> 
-  <h3>Fixtures Difficulty Ratings</h3>
+  <h3>Fixture Difficulty Ratings</h3> 
 </div>
   
 
   
 <div class="container">
-     
-	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
-  	<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-  	</script>	
 
 
-    <div class="embed-responsive embed-responsive-4by3 center-block">
-    <iframe class="embed-responsive-item" src="https://gpoudel.github.io/gitFPL/fplBoardLive/2017/FixturesTableLink.html"></iframe>	
-    </div>
+<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<table id="data-table" class="table table-bordered">  
+                     <thead>  
+                          <tr>                                
+                               <th>Team</th>  
+                               <th>FIX1</th>  
+							   <th>FIX2</th>
+							   <th>FIX3</th>
+							   <th>FIX4</th>
+							   <th>FIX5</th>
+							   <th>FIX6</th>
+							   <th>FIX7</th>
+							   <th>FIX8</th>
+							   <th>FIX8</th>
+							   <th>FIX10</th>							   
+                          </tr>  
+                     </thead>  
+                </table>    
   
+</div>
+
+
 
 	
 
 <footer class="mt-5">
     <div class="container-fluid" style="background-color:#38003C;color:white">     
 	  <p class="text-center">© fplAnalytics.com 2015</p>
-    </div>	
+    </div>
 </footer>
 
-	
 
  <div class="container-fluid">
    <div class="row mb-2">	
@@ -188,11 +173,9 @@
 	</div>	
 				
      </div>
-   </div>		
-     
-	 
-	
-  <!-- advertising ZCRVADlG4szW4aDJhMS1NOdb77JsuEk6fJzTTMx9XK0h4DnRx5D1j5HWqzDtIN8l-VPqWe8c8RLqidX5XAv4tQ==-->
+   </div>	
+
+<!-- advertising ZCRVADlG4szW4aDJhMS1NOdb77JsuEk6fJzTTMx9XK0h4DnRx5D1j5HWqzDtIN8l-VPqWe8c8RLqidX5XAv4tQ==-->
 		<script data-cfasync="false"  id="clevernt" type="text/javascript">
 			(function (document, window) {
                 var c = document.createElement("script");
@@ -209,11 +192,208 @@
             })(document, window);
         </script>
     <!-- end advertising -->   
+  
 
 </body>
 </html>
 
 
+ <script>  
+ $(document).ready(function(){  
+ 
+ var myTable = $('#data-table').DataTable({  
+           "ajax": {
+				"url": "https://s3.eu-central-1.amazonaws.com/fpl.data/db/fdr.json",
+				"dataSrc": ''
+			},  
+		   "pageLength": 20,
+		   "paging":   false,
+		   "ordering": false,
+           "info":     false,
+		   "searching": false,
+           "columns"     :     [  				
+		        {data: "team"},
+			    {data: "FIX1"},
+				{data: "FIX2"},
+				{data: "FIX3"},
+				{data: "FIX4"},
+			    {data: "FIX5"},
+				{data: "FIX6"},
+				{data: "FIX7"},
+				{data: "FIX8"},
+			    {data: "FIX9"},
+				{data: "FIX10"}				
+           ],
+		   
+		 rowCallback: function(row, data, index) {
+			if (data.FDR1 == "5") {
+			$("td:eq(1)", row).css('background-color','#861d46')
+			}
+			if (data.FDR2 == "5") {
+			$("td:eq(2)", row).css('background-color','#861d46')
+			}		
+			if (data.FDR3 == "5") {
+			$("td:eq(3)", row).css('background-color','#861d46')
+			}
+			if (data.FDR4 == "5") {
+			$("td:eq(4)", row).css('background-color','#861d46')
+			}
+			if (data.FDR5 == "5") {
+			$("td:eq(5)", row).css('background-color','#861d46')
+			}
+			if (data.FDR6 == "5") {
+			$("td:eq(6)", row).css('background-color','#861d46')
+			}
+			if (data.FDR7 == "5") {
+			$("td:eq(7)", row).css('background-color','#861d46')
+			}
+			if (data.FDR8 == "5") {
+			$("td:eq(8)", row).css('background-color','#861d46')
+			}
+			if (data.FDR9 == "5") {
+			$("td:eq(9)", row).css('background-color','#861d46')
+			}
+			if (data.FDR10 == "5") {
+			$("td:eq(10)", row).css('background-color','#861d46')
+			}
+			
+			
+			if (data.FDR1 == "4") {
+			$("td:eq(1)", row).css('background-color','#ff005a')
+			}
+			if (data.FDR2 == "4") {
+			$("td:eq(2)", row).css('background-color','#ff005a')
+			}		
+			if (data.FDR3 == "4") {
+			$("td:eq(3)", row).css('background-color','#ff005a')
+			}
+			if (data.FDR4 == "4") {
+			$("td:eq(4)", row).css('background-color','#ff005a')
+			}
+			if (data.FDR5 == "4") {
+			$("td:eq(5)", row).css('background-color','#ff005a')
+			}
+			if (data.FDR6 == "4") {
+			$("td:eq(6)", row).css('background-color','#ff005a')
+			}
+			if (data.FDR7 == "4") {
+			$("td:eq(7)", row).css('background-color','#ff005a')
+			}
+			if (data.FDR8 == "4") {
+			$("td:eq(8)", row).css('background-color','#ff005a')
+			}
+			if (data.FDR9 == "4") {
+			$("td:eq(9)", row).css('background-color','#ff005a')
+			}
+			if (data.FDR10 == "4") {
+			$("td:eq(10)", row).css('background-color','#ff005a')
+			}							
+			
+			
+			if (data.FDR1 == "3") {
+			$("td:eq(1)", row).css('background-color','#ebebe4')
+			}
+			if (data.FDR2 == "3") {
+			$("td:eq(2)", row).css('background-color','#ebebe4')
+			}		
+			if (data.FDR3 == "3") {
+			$("td:eq(3)", row).css('background-color','#ebebe4')
+			}
+			if (data.FDR4 == "3") {
+			$("td:eq(4)", row).css('background-color','#ebebe4')
+			}
+			if (data.FDR5 == "3") {
+			$("td:eq(5)", row).css('background-color','#ebebe4')
+			}
+			if (data.FDR6 == "3") {
+			$("td:eq(6)", row).css('background-color','#ebebe4')
+			}
+			if (data.FDR7 == "3") {
+			$("td:eq(7)", row).css('background-color','#ebebe4')
+			}
+			if (data.FDR8 == "3") {
+			$("td:eq(8)", row).css('background-color','#ebebe4')
+			}
+			if (data.FDR9 == "3") {
+			$("td:eq(9)", row).css('background-color','#ebebe4')
+			}
+			if (data.FDR10 == "3") {
+			$("td:eq(10)", row).css('background-color','#ebebe4')
+			}
+			
+			
+			if (data.FDR1 == "2") {
+			$("td:eq(1)", row).css('background-color','#00ff86')
+			}
+			if (data.FDR2 == "2") {
+			$("td:eq(2)", row).css('background-color','#00ff86')
+			}		
+			if (data.FDR3 == "2") {
+			$("td:eq(3)", row).css('background-color','#00ff86')
+			}
+			if (data.FDR4 == "2") {
+			$("td:eq(4)", row).css('background-color','#00ff86')
+			}
+			if (data.FDR5 == "2") {
+			$("td:eq(5)", row).css('background-color','#00ff86')
+			}
+			if (data.FDR6 == "2") {
+			$("td:eq(6)", row).css('background-color','#00ff86')
+			}
+			if (data.FDR7 == "2") {
+			$("td:eq(7)", row).css('background-color','#00ff86')
+			}
+			if (data.FDR8 == "2") {
+			$("td:eq(8)", row).css('background-color','#00ff86')
+			}
+			if (data.FDR9 == "2") {
+			$("td:eq(9)", row).css('background-color','#00ff86')
+			}
+			if (data.FDR10 == "2") {
+			$("td:eq(10)", row).css('background-color','#00ff86')
+			}
+			
+			
+			if (data.FDR1 == "1") {
+			$("td:eq(1)", row).css('background-color','#257d5a')
+			}
+			if (data.FDR2 == "1") {
+			$("td:eq(2)", row).css('background-color','#257d5a')
+			}		
+			if (data.FDR3 == "1") {
+			$("td:eq(3)", row).css('background-color','#257d5a')
+			}
+			if (data.FDR4 == "1") {
+			$("td:eq(4)", row).css('background-color','#257d5a')
+			}
+			if (data.FDR5 == "1") {
+			$("td:eq(5)", row).css('background-color','#257d5a')
+			}
+			if (data.FDR6 == "1") {
+			$("td:eq(6)", row).css('background-color','#257d5a')
+			}
+			if (data.FDR7 == "1") {
+			$("td:eq(7)", row).css('background-color','#257d5a')
+			}
+			if (data.FDR8 == "1") {
+			$("td:eq(8)", row).css('background-color','#257d5a')
+			}
+			if (data.FDR9 == "1") {
+			$("td:eq(9)", row).css('background-color','#257d5a')
+			}
+			if (data.FDR10 == "1") {
+			$("td:eq(10)", row).css('background-color','#257d5a')
+			}
+			
+		}
+		   
+      });   
+	
+});
+ 
+ </script>
+ 
+ 
  
 <!-- google analytics script -->
     <script>
@@ -225,9 +405,5 @@
       ga('send', 'pageview');
   
     </script>
- 
- 
- 
- 
  
  
