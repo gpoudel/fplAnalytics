@@ -4,7 +4,7 @@ function submitToAPI(e) {
 
             var Namere = /[A-Za-z]{1}[A-Za-z]/;
             if (!Namere.test($("#name-input").val())) {
-                         alert ("Name can not less than 2 char");
+                         alert ("Name can not be less than 2 char");
                 return;
             }
             
@@ -47,12 +47,12 @@ function submitToAPI(e) {
          
          success: function () {
            // clear form and show a success message
-           alert("Successfull");
+           alert("Thank you !! Your message is sent successfully");
            document.getElementById("contact-form").reset();
        location.reload();
          },
          error: function () {
            // show an error message
-           alert("UnSuccessfull");
+           alert("Message not sent !! Please try again");
          }});
      }
