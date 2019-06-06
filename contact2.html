@@ -255,21 +255,26 @@
   <h3>Contact us</h3> 
 </div>
   
+  <div class="container">
+  
+  <div class="row mb-3">
+  <div class="col-sm-8">
+  
   <form id="contact-form" method="post">
             <h4>Name:</h4>
-            <input type="text" style="height:35px;" id="name-input" placeholder="Enter name here…" class="form-control" style="width:100%;" /><br/>
-            <h4>Phone:</h4>
-            <input type="phone" style="height:35px;" id="phone-input" placeholder="Enter phone number" class="form-control" style="width:100%;"/><br/>
+            <input type="text" id="name-input" placeholder="Enter name here…" class="form-control" style="width:50%;" /><br/>            
             <h4>Email:</h4>
-            <input type="email" style="height:35px;" id="email-input" placeholder="Enter email here…" class="form-control" style="width:100%;"/><br/>
+            <input type="email" id="email-input" placeholder="Enter email here…" class="form-control" style="width:50%;"/><br/>
             <h4>How can we help you?</h4>
-            <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:100%;"></textarea><br/>
-            <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
+            <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:50%;"></textarea><br/>
+            <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:50%;"></div>
             <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
   </form>
   
-  <div class="container">	   
-  <h5>contact us via:</h5>  
+  </div>
+  
+  <div class="col-sm-4">
+  <h5>or via social media:</h5>  
   </br>
   <p class="lead">    
     <a href="https://www.facebook.com/fplAnalytics" class="fab fa-facebook btn btn-lg" role="button"> @fplAnalytics</a>
@@ -277,14 +282,10 @@
 	</br>
 	</br>
 	<a class="fab fa-twitter btn btn-lg" href="https://twitter.com/fplAnalytics" role="button"> @fplAnalytics</a>
-	
-	</br>
-	</br>
-	</br>
-	 <h6>Or simply email to: </h6>		
-     <p><b>crisscrossdata@gmail.com</b></p>
   </p>
-
+  
+  </div>
+ </div>
  </div>
  
  
