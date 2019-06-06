@@ -7,11 +7,13 @@ function submitToAPI(e) {
                          alert ("Name can not less than 2 char");
                 return;
             }
-            var mobilere = /[0-9]{10}/;
-            if (!mobilere.test($("#phone-input").val())) {
-                alert ("Please enter valid mobile number");
-                return;
-            }
+            
+			//var mobilere = /[0-9]{10}/;
+            //if (!mobilere.test($("#phone-input").val())) {
+            //    alert ("Please enter valid mobile number");
+            //    return;
+            // }
+		   
             if ($("#email-input").val()=="") {
                 alert ("Please enter your email id");
                 return;
@@ -24,12 +26,12 @@ function submitToAPI(e) {
             }
 
        var name = $("#name-input").val();
-       var phone = $("#phone-input").val();
+       //var phone = $("#phone-input").val();
        var email = $("#email-input").val();
        var desc = $("#description-input").val();
        var data = {
           name : name,
-          phone : phone,
+          //phone : phone,
           email : email,
           desc : desc
         };
