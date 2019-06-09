@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Season 2013/14 - fplAnalytics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/fav.png" type="image/x-icon">
+  
+         
+   <!-- js -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>		         		     
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>        
+        
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>  	
+   
+   <script type="text/javascript" src="js/datatables.min.js"></script>     
+   <script src="js/jquery.dataTables.yadcf.js"></script>		 
+	
+	
+   <!-- css -->  
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+   <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.fplAnalytics.css"/>
+   <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css"/>
+   <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.yadcf.fplAnalytics.css"/> 
+		  		   
+</head>
+<body>
+
+
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-md sticky-top navbar-light bg-faded py-0" style="background-color:#38003C;color:white;">
+   
+   
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color:white;">  
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="rounded-circle" width="40" height="40" alt=""></a>
+  
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="background-color:#38003C;color:white;">
+  
+   
+    <ul class="navbar-nav">
+	
+      <li class="dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">Data Tables</a>
+        <ul class="dropdown-menu" style="background-color:#e90052;"> 		 
+            <li class="nav-item">
+                <div class="row" style="width: 200px;">
+                    <ul class="list-unstyled col-md-12">
+                        <li><a class="nav-link" href="playerStatus.html" style="color:white">Players' DB</a></li>
+                        <li><a class="nav-link" href="fdr.html" style="color:white">Fixtures Difficulty</a></li>
+                        <li><a class="nav-link" href="priceTable.html" style="color:white">Price Change</a></li>                   
+                        <li><a class="nav-link" href="InjuryWatch.html" style="color:white">Injuries/Suspensions</a></li>
+                        <li><a class="nav-link" href="ptsBreakdown.html" style="color:white">Points Breakdown</a></li>                       
+                    </ul>                   
+                </div>
+            </li>
+        </ul>
+      </li>     
+	  
+	  <li class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">Visualizations</a>
+        <ul class="dropdown-menu"  style="background-color:#e90052;">
+            <li class="nav-item">
+                <div class="row" style="width: 200px;">
+                    <ul class="list-unstyled col-md-12">
+                        <li><a class="nav-link" href="ICT.html" style="color:white">ICT value</a></li>
+                        <li><a class="nav-link" href="PointsPerMillionCost.html" style="color:white">Points per Cost</a></li>
+                        <li><a class="nav-link" href="TransferAnomaly.html" style="color:white">Transfer Anomaly</a></li>     
+						<li><a class="nav-link" href="NettTransfers.html" style="color:white">Nett. GW Transfers</a></li>
+                        <li><a class="nav-link" href="treeMap.html" style="color:white">Pts. Treemap</a></li>
+                        <li><a class="nav-link" href="PointsPGPMC.html" style="color:white">Pts./game per Cost</a></li>
+                        <li><a class="nav-link" href="PlayerValueChangeSeason.html" style="color:white">Player Value Change</a></li>
+                    </ul>                   
+                </div>
+            </li>
+        </ul>
+      </li>
+	  
+	  <li class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">Historical Data</a>
+         <ul class="dropdown-menu"  style="background-color:#e90052;">
+            <li class="nav-item">
+                <div class="row" style="width: 150px;">
+                    <ul class="list-unstyled col-md-12">
+                        <li><a class="nav-link" href="history1819.html" style="color:white">Season 18/19</a></li>
+                        <li><a class="nav-link" href="history1718.html" style="color:white">Season 17/18</a></li>
+                        <li><a class="nav-link" href="history1617.html" style="color:white">Season 16/17</a></li>
+                        <li><a class="nav-link" href="history1516.html" style="color:white">Season 15/16</a></li>       
+                        <li><a class="nav-link" href="history1415.html" style="color:white">Season 14/15</a></li>
+                        <li><a class="nav-link" href="history1314.html" style="color:white">Season 13/14</a></li>
+                    </ul>                   
+                </div>
+            </li>
+        </ul>
+      </li>        	  	 
+	
+	  <li class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">Tools</a>
+         <ul class="dropdown-menu"  style="background-color:#e90052;">
+            <li class="nav-item">
+                <div class="row" style="width: 200px;">
+                    <ul class="list-unstyled col-md-12">
+                        <li><a class="nav-link" href="compareRank.html" style="color:white">Compare Global Rank</a></li>
+                    </ul>                   
+                </div>
+            </li>
+        </ul>
+      </li>   
+	
+    
+	  <li class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">More</a>
+         <ul class="dropdown-menu"  style="background-color:#e90052;">
+            <li class="nav-item">
+                <div class="row" style="width: 180px;">
+                    <ul class="list-unstyled col-md-12">
+                        <li><a class="nav-link" href="fleagues.html" style="color:white">Featured Leagues</a></li>
+                    </ul>                   
+                </div>
+            </li>
+        </ul>
+      </li>        	  	 
+	
+	
+	
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html" style="color:white;">Contact</a>
+      </li>    	
+	 
+    </ul>
+	
+  </div>    
+</nav>
+
+
+
+
+<div class="container-fluid text-center" style="background-color:#00FF87;color:#38003C">  
+  <h3>Season 2013/14</h3> 
+</div>
+  
+
+  
+<div class="container">
+	
+<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+<script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+</script>	
+
+<table id="data-table" class="table table-bordered">  
+                     <thead>  
+                          <tr>  
+                               <th>Player</th>  
+                               <th>Team</th>  
+                               <th>Position</th>  							   				
+							   <th>Minutes</th>  
+							   <th>Goals</th>  
+							   <th>Assists</th>  
+							   <th>CS</th>  							   
+                               <th>Total Pts.</th>  
+							   <th>Bonus</th>  
+                          </tr>  
+                     </thead>  
+                </table>    
+  
+</div>
+
+
+
+	
+
+<footer class="mt-5">
+    <div class="container-fluid" style="background-color:#38003C;color:white">     
+	  <p class="text-center">© fplAnalytics.com 2015</p>
+    </div>	
+</footer>
+
+	
+
+ <div class="container-fluid">
+   <div class="row mb-2">	
+	 
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>	
+	</div>
+
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>
+	</div>	
+				
+     </div>
+   </div>		
+  
+  
+  
+  
+ <script>  
+ $(document).ready(function(){  
+ 
+ var myTable = $('#data-table').DataTable({  
+           "ajax": {
+				"url": "https://s3.eu-central-1.amazonaws.com/fpl.data/db/history201314.json",
+				"dataSrc": ''
+			},  
+           "columns"     :     [  
+				{data: "name"},
+		        {data: "team"},
+			    {data: "position"},
+				{data: "minutes"},				
+				{data: "goals"},
+				{data: "assists"},
+				{data: "cs"},                			
+				//{data: "points_per_game"},
+				{data: "points"},
+				{data: "bonus"}				
+           ],
+		
+		
+		   
+      });  
+ 
+ 
+ yadcf.init(myTable, [
+    //{column_number : 0, filter_type: "auto_complete"},
+    {column_number : 1},
+	{column_number : 2},
+	{column_number : 3, filter_type: "range_number_slider"},		
+	{column_number : 7, filter_type: "range_number_slider"}
+	]);
+	
+	
+	
+});
+ 
+ </script>
+
+  
+  <!-- advertising ZCRVADlG4szW4aDJhMS1NOdb77JsuEk6fJzTTMx9XK0h4DnRx5D1j5HWqzDtIN8l-VPqWe8c8RLqidX5XAv4tQ==-->
+		<script data-cfasync="false"  id="clevernt" type="text/javascript">
+			(function (document, window) {
+                var c = document.createElement("script");
+                c.type = "text/javascript"; c.async = !0; c.id = "CleverNTLoader28504";  c.setAttribute("data-target",window.name); c.setAttribute("data-callback","put-your-callback-macro-here");
+                c.src = "//clevernt.com/scripts/c02e5be4f5f67d7742bb0531d2b9adc9.min.js?20181219=" + Math.floor((new Date).getTime());
+                var a = !1;
+                try {
+                    a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+                } catch (e) {
+                    a = !1;
+                }
+                a || ( a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+                a.parentNode.insertBefore(c, a);
+            })(document, window);
+        </script>
+    <!-- end advertising -->   
+
+</body>
+</html>
+
+
+ 
+<!-- google analytics script -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-82390542-1', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+ 
+ 
+ 
+ 
+ 
+ 
