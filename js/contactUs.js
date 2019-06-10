@@ -1,6 +1,6 @@
 function submitToAPI(e) {
        e.preventDefault();
-       var URL = "https://5ikdjvbpqa.execute-api.eu-west-1.amazonaws.com/prod/contact-us";
+       var URL = "https://l90xa8pmy6.execute-api.eu-west-1.amazonaws.com/prod/fplanalytics-contactme";
 
             var Namere = /[A-Za-z]{1}[A-Za-z]/;
             if (!Namere.test($("#name-input").val())) {
@@ -38,7 +38,7 @@ function submitToAPI(e) {
 
        $.ajax({
          type: "POST",
-         url : "https://5ikdjvbpqa.execute-api.eu-west-1.amazonaws.com/prod/contact-us",		 
+         url : "https://l90xa8pmy6.execute-api.eu-west-1.amazonaws.com/prod/fplanalytics-contactme",		 
          dataType: "json",
          crossDomain: "true",
          contentType: "application/json; charset=utf-8",
