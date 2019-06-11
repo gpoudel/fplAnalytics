@@ -247,20 +247,7 @@ display : none;
 
 
 <script>
-$(document).ready(function(){
-  $.ajax({
-    //url: "db/teams/66010.json",
-	  url: "db/66010.json",
-    type: "get",
-    async: false,
-    success: function(data) {      
-      var json = JSON.parse(data);      
-	  
-	  //alert(json.entry.id);
-	  //alert(json.entry.name);
-
-    //alert(json.history[0].points);
-	  
+    $.getJSON( "db/66010.json", function(json) {	  
 	  document.getElementById("name").innerHTML = json.entry.name;
 	  
 	            
@@ -317,11 +304,6 @@ Plotly.newPlot('gwPts', data1, layout1);
 	
 
 
-
-
-
-    }
-  });		
 });
 
 
