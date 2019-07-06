@@ -1,145 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<style>
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-.fa-android {
-  background: #a4c639;
-  color: white;
-}
-
-.fa-dribbble {
-  background: #ea4c89;
-  color: white;
-}
-
-.fa-vimeo {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-
-.fa-vine {
-  background: #00b489;
-  color: white;
-}
-
-.fa-foursquare {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-stumbleupon {
-  background: #eb4924;
-  color: white;
-}
-
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-
-.fa-yahoo {
-  background: #430297;
-  color: white;
-}
-
-.fa-soundcloud {
-  background: #ff5500;
-  color: white;
-}
-
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
-
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
-</style>
-
-<title>Contact - fplAnalytics</title>
+  <title>Player Status</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/fav.png" type="image/x-icon">
   
-  <link rel="stylesheet" href="css/bootstrap.min.css">   
-  
-  <!-- social media icons -->
-  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-
-  
-  <script src="js/contactUs.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
+         
+   <!-- js -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>		         		     
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>        
+        
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>  	
+   
+   <script type="text/javascript" src="js/datatables.min.js"></script>     
+   <script src="js/jquery.dataTables.yadcf.js"></script>		 
+	
+	
+   <!-- css -->  
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+   <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.fplAnalytics.css"/>
+   <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css"/>
+   <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.yadcf.fplAnalytics.css"/> 
+		  		   
 </head>
 <body>
 
@@ -201,7 +84,7 @@
             <li class="nav-item">
                 <div class="row" style="width: 150px;">
                     <ul class="list-unstyled col-md-12">
-			                  <li><a class="nav-link" href="history1819.html" style="color:white">Season 18/19</a></li>
+                        <li><a class="nav-link" href="history1819.html" style="color:white">Season 18/19</a></li>
                         <li><a class="nav-link" href="history1718.html" style="color:white">Season 17/18</a></li>
                         <li><a class="nav-link" href="history1617.html" style="color:white">Season 16/17</a></li>
                         <li><a class="nav-link" href="history1516.html" style="color:white">Season 15/16</a></li>       
@@ -254,52 +137,159 @@
 
 
 
+
 <div class="container-fluid text-center" style="background-color:#00FF87;color:#38003C">  
-  <h3>Contact me</h3> 
+  <h3>Players' performance DB</h3> 
 </div>
   
-  <div class="container">
-  
-  <div class="row mb-3">
-  <div class="col-sm-8">
-  
-  <form id="contact-form" method="post">
-            <h4>Name:</h4>
-            <input type="text" id="name-input" placeholder="Enter name here…" class="form-control" style="width:50%;" /><br/>            
-            <h4>Email:</h4>
-            <input type="email" id="email-input" placeholder="Enter email here…" class="form-control" style="width:50%;"/><br/>
-            <h4>How can we help you?</h4>
-            <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:70%;"></textarea><br/>
-            <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:70%;"></div>
-            <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
-  </form>
-  
-  </div>
-  
-  <div class="col-sm-4">
-  <h5>or via social media:</h5>  
-  </br>
-  <p class="lead">    
-    <a href="https://www.facebook.com/fplAnalytics" class="fab fa-facebook btn btn-lg" role="button"> @fplAnalytics</a>
 
-	</br>
-	</br>
-	<a class="fab fa-twitter btn btn-lg" href="https://twitter.com/fplAnalytics" role="button"> @fplAnalytics</a>
-  </p>
   
-  </div>
- </div>
- </div>
- 
- 
- 
+<div class="container">
+
+<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		
+<table id="data-table" class="table table-bordered">  
+                     <thead>  
+                          <tr>  
+                                <th>Player</th>  
+                                <th>Team</th>  
+                                <th>Position</th>  
+				<th>Cost</th>
+				<th>Status</th>
+				<th>Minutes</th>  
+                                <th>Pts.</th>  
+				<th>Bonus</th>  
+                                <th>Pts./game</th>  
+			        <th>Ownership %</th>  
+                          </tr>  
+                     </thead>  
+                </table>    
+  
+</div>
+
+
+
+	
+
 <footer class="mt-5">
     <div class="container-fluid" style="background-color:#38003C;color:white">     
 	  <p class="text-center">© fplAnalytics.com 2015</p>
-    </div>
+    </div>	
 </footer>
 
 	
+
+ <div class="container-fluid">
+   <div class="row mb-2">	
+	 
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>	
+	</div>
+
+	<div class="col-sm-6">
+	<!-- google adSense -->
+  	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  	<!-- ad1 -->
+  	<ins class="adsbygoogle" data-ad-client="ca-pub-4920612207674722" data-ad-format="auto" data-ad-slot="1603757698" style="display: block;"></ins>
+  	<script>
+    	(adsbygoogle = window.adsbygoogle || []).push({});
+  	</script>
+	</div>	
+				
+     </div>
+   </div>		
+
+  
+  <!-- advertising ZCRVADlG4szW4aDJhMS1NOdb77JsuEk6fJzTTMx9XK0h4DnRx5D1j5HWqzDtIN8l-VPqWe8c8RLqidX5XAv4tQ==-->
+		<script data-cfasync="false"  id="clevernt" type="text/javascript">
+			(function (document, window) {
+                var c = document.createElement("script");
+                c.type = "text/javascript"; c.async = !0; c.id = "CleverNTLoader28504";  c.setAttribute("data-target",window.name); c.setAttribute("data-callback","put-your-callback-macro-here");
+                c.src = "//clevernt.com/scripts/c02e5be4f5f67d7742bb0531d2b9adc9.min.js?20181219=" + Math.floor((new Date).getTime());
+                var a = !1;
+                try {
+                    a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+                } catch (e) {
+                    a = !1;
+                }
+                a || ( a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+                a.parentNode.insertBefore(c, a);
+            })(document, window);
+        </script>
+    <!-- end advertising -->   
+
+</body>
+</html>
+
+
+ <script>  
+ $(document).ready(function(){  
+ 
+ var myTable = $('#data-table').DataTable({  
+           "ajax": {
+				"url": "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json",
+				"dataSrc": ''
+			},  
+           "columns"     :     [  
+				{ data: "web_name"},
+		        {data: "team_name"},
+			    {data: "position"},
+				{data: "now_cost"},
+				{data: "status"},
+				{data: "minutes"},
+                {data: "total_points"},
+				{data: "bonus"},
+				{data: "points_per_game"},
+				{data: "selected_by_percent"}				
+           ],
+		
+		rowCallback: function(row, data, index) {
+			if (data.status === "Available") {
+			$("td:eq(4)", row).css('background-color','#99ff9c')
+			}
+			if (data.status === "NotAvail") {
+			$("td:eq(4)", row).css('background-color','#999999')
+			}
+			if (data.status === "Doubtful") {
+			$("td:eq(4)", row).css('background-color','#ffff00')
+			}
+			if (data.status === "Injured") {
+			$("td:eq(4)", row).css('background-color','#ff0000')
+			}
+		}
+		   
+      });  
+ 
+ 
+ yadcf.init(myTable, [
+    //{column_number : 0, filter_type: "auto_complete"},
+    {column_number : 1},
+	{column_number : 2},
+	{column_number : 3, filter_type: "range_number_slider"},
+	{column_number : 4},
+	{column_number : 5, filter_type: "range_number_slider"},
+	{column_number : 6, filter_type: "range_number_slider"},
+	{column_number : 7, filter_type: "range_number_slider"},
+	{column_number : 8, filter_type: "range_number_slider"},
+	{column_number : 9, filter_type: "range_number_slider"}
+	]);
+	
+	
+	
+});
+ 
+ </script>
+ 
+ 
 <!-- google analytics script -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -309,9 +299,10 @@
       ga('create', 'UA-82390542-1', 'auto');
       ga('send', 'pageview');
   
-    </script> 
-  
-
-       
-</body>
-</html> 
+    </script>
+ 
+ 
+ 
+ 
+ 
+ 
