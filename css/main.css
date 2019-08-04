@@ -2175,6 +2175,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+.small-footer-gap {
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+}
+
+
 
 .footer-section-gap {
   padding:40px 0;
