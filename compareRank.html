@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/elements/fav.png">
+		<link rel="shortcut icon" href="img/fav.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -194,7 +194,7 @@
 	<script>
 		$(document).ready(function(){
 			
-			$.getJSON("db/compareRanks.json", function(json){
+			$.getJSON("https://s3.eu-central-1.amazonaws.com/fpl.data/db/compareRanks.json", function(json){
 		
 				$("button").click(function(){
 				//$.getJSON("db/compareRanks.json", function(json){
