@@ -130,9 +130,9 @@
 			
 			<!-- Start testomial Area -->			
 				<section class="testomial-area">
-					<div class="container">
-						<div class="mypanel"></div>		
-						<p class="text-center">© fplAnalytics.com 2015</p>																
+					<div class="container text-center">
+						<h3 class="TeamName"></h3>			
+                        <img src="https://fantasy.premierleague.com/img/flags/EC.gif">
 					</div>	
 				</section>				
 			<!-- End testomial Area -->
@@ -147,13 +147,14 @@
 			</footer>
 			<!-- End footer Area -->
 
-		</body>
+	</body>
+	
+	
 	</html>
 
 	<script>
 		$.getJSON('db/259377.json', function(data) {
-			var text = ` <u><b>Chips Played (top 5k managers/current GW)</b></u><br>
-						 WildCard : ${data.player_first_name}`                            
-			$(".mypanel").html(text);
+			var text = ` ${data.name}`                            
+			$(".TeamName").html(text);
 			});
 	</script>
