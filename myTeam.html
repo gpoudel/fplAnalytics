@@ -131,8 +131,9 @@
 			<!-- Start testomial Area -->			
 				<section class="testomial-area">
 					<div class="container text-center">
-						<h3 class="TeamName"></h3>			
-                        <img src="https://fantasy.premierleague.com/img/flags/EC.gif">
+						<h3 class="TeamName"></h3>									
+						<img id="myImg" src="">
+						<h3 class="Country"></h3>			
 					</div>	
 				</section>				
 			<!-- End testomial Area -->
@@ -153,8 +154,21 @@
 	</html>
 
 	<script>
+		var flag_image = "https://fantasy.premierleague.com/img/flags/"
+		
+	
+      
 		$.getJSON('db/259377.json', function(data) {
 			var text = ` ${data.name}`                            
 			$(".TeamName").html(text);
+			var text2 = ` ${data.player_region_iso_code_short}`                            
+			$(".Country").html(text2);
+
+			//alert(text2);
+			var flag_url = "https://fantasy.premierleague.com/img/flags/" + text2.trim() + ".gif"		
+			//alert(flag_url);
+		
+			document.getElementById("myImg").src = flag_url;
+
 			});
 	</script>
