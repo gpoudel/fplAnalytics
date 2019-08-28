@@ -181,12 +181,28 @@
 		
 			document.getElementById("myImg").src = flag_url;
 
-			});
+		});
 
+
+
+		$.getJSON('db/managers_history.json', function(json) {		
+			
+
+			//console.log( "JSON Data: " + json.current[1].overall_rank);
+
+			var overall_rank = [];
+			var gws = []
+
+			for(var i = 0; i < json.current.length; i++) {
+				//console.log( "JSON Data: " + i + "  = " + json.current[i].overall_rank);
+
+				overall_rank.push(json.current[i].overall_rank);
+				gws.push(json.current[i].event);
+			}
 
 			var trace1 = {
-			  x: [1, 2, 3, 4],
-  			  y: [10, 15, 13, 17],
+			  x: gws,
+  			  y: overall_rank,
   			  type: 'scatter'
 			};
 
@@ -194,6 +210,7 @@
 			var data = [trace1];
 
 			Plotly.newPlot('myDiv', data);
+		 });
 
 
 	</script>

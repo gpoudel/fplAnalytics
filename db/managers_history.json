@@ -1,0 +1,56 @@
+{
+  "current": [
+    {
+      "event": 1,
+      "points": 108,
+      "total_points": 108,
+      "rank": 10044,
+      "rank_sort": 10139,
+      "overall_rank": 10044,
+      "bank": 0,
+      "value": 1000,
+      "event_transfers": 0,
+      "event_transfers_cost": 0,
+      "points_on_bench": 7
+    },
+    {
+      "event": 2,
+      "points": 54,
+      "total_points": 162,
+      "rank": 691636,
+      "rank_sort": 694228,
+      "overall_rank": 8467,
+      "bank": 0,
+      "value": 1001,
+      "event_transfers": 0,
+      "event_transfers_cost": 0,
+      "points_on_bench": 4
+    },
+    {
+      "event": 3,
+      "points": 67,
+      "total_points": 229,
+      "rank": 272154,
+      "rank_sort": 272944,
+      "overall_rank": 1144,
+      "bank": 13,
+      "value": 1007,
+      "event_transfers": 2,
+      "event_transfers_cost": 0,
+      "points_on_bench": 2
+    }
+  ],
+  "past": [
+    {
+      "season_name": "2017/18",
+      "total_points": 1860,
+      "rank": 2343357
+    },
+    {
+      "season_name": "2018/19",
+      "total_points": 2139,
+      "rank": 565438
+    }
+  ],
+  "chips": []
+}
