@@ -138,6 +138,7 @@
 						<h3 class="Country"></h3>			
 					</div>	
 
+					<div id="gd"></div>
 				   
 					<div class="container">
 						<div class="row d-flex justify-content-center">					
@@ -184,7 +185,26 @@
 		
 			document.getElementById("myImg").src = flag_url;
 		
+			
 
+			//Percentile chart
+			var percentile_data = [{domain: {x: [0, 1], y: [0, 1]}, value: 90, title: {text: "Percentile"},
+    					type: "indicator", mode: "gauge+number", 
+						gauge:{axis: {range: [null, 100]}, 
+						       bar: {color: "cyan"}, bgcolor: "white", borderwidth: 2, bordercolor: "gray",
+						       steps: [{range: [0, 75], color: "red"},{range: [75, 85], color: "orange"},{range: [85, 95], color: "yellow"},{range: [95, 100], color: "green"}] }
+						}];
+
+			var layout = {width: 600, height: 500, margin: {t: 0, b: 0}};
+			
+			Plotly.newPlot(gd,percentile_data,layout);
+
+
+
+
+
+
+			//Overall ranking over GWs viz.
 			var overall_rank = [];
 			var gws = []
 
@@ -204,7 +224,7 @@
 
 			var OR_plot = [trace1];
 
-			Plotly.newPlot('myDiv', OR_plot);
+			Plotly.newPlot('myDiv', OR_plot);			
 		 });
 		 
 
