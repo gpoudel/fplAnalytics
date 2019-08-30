@@ -188,12 +188,24 @@
 			
 
 			//Percentile chart
-			var percentile_data = [{domain: {x: [0, 1], y: [0, 1]}, value: 90, title: {text: "Percentile"},
-    					type: "indicator", mode: "gauge+number", 
+			/*
+			var percentile_data = [{domain: {x: [0, 1], y: [0, 1]}, value: 90, title: {text: "Percentile", font: {size: 24}},
+    					type: "indicator", mode: "gauge+number+delta", delta: {reference: 95},
 						gauge:{axis: {range: [null, 100]}, 
 						       bar: {color: "cyan"}, bgcolor: "white", borderwidth: 2, bordercolor: "gray",
 						       steps: [{range: [0, 75], color: "red"},{range: [75, 85], color: "orange"},{range: [85, 95], color: "yellow"},{range: [95, 100], color: "green"}] }
 						}];
+			*/
+
+
+			var percentile_data = [{domain: {x: [0, 1], y: [0, 1]}, value: 93, title: {text: "Percentile", font: {size: 30}},
+    								type: "indicator", mode: "gauge+number+delta", delta: {reference: 88}, 
+									gauge: {axis: 
+									             {range: [null, 100]}, 
+												  steps: [{range: [0, 70], color: "lightgray"},
+    								             			{range: [70, 90], color: "gray"}], 
+												  threshold: {line: {color: "red", width: 4},
+    								thickness: 0.75, value: 93}}}];
 
 			var layout = {width: 600, height: 500, margin: {t: 0, b: 0}};
 			
