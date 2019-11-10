@@ -207,7 +207,7 @@
 
 <script>
 
-Plotly.d3.csv('db/flexTree2.csv', function(err, rows){
+Plotly.d3.csv('https://s3.eu-central-1.amazonaws.com/fpl.data/db/treemap.csv', function(err, rows){
   function unpack(rows, key) {
   return rows.map(function(row) { return row[key]});
 }
@@ -217,11 +217,11 @@ var data = [{
       ids: unpack(rows, 'ids'),
       labels: unpack(rows, 'labels'),
       parents: unpack(rows, 'parents'),
-      values: unpack(rows, 'values')
+      values: unpack(rows, 'points'),
+      marker: {colors: unpack(rows, 'color')}
     }];
 
-//var layout = {treemapcolorway: ["red", "skyblue"]}
-//Plotly.newPlot('graphDiv', data, layout);
+
 Plotly.newPlot('graphDiv', data);
 })
 
