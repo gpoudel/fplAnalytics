@@ -1,0 +1,2283 @@
+[
+  [
+    {
+      "web_name": "De Bruyne",
+      "nett_transfers": -69675
+    },
+    {
+      "web_name": "Sterling",
+      "nett_transfers": -67352
+    },
+    {
+      "web_name": "Jim\u00e9nez",
+      "nett_transfers": -59729
+    },
+    {
+      "web_name": "Aubameyang",
+      "nett_transfers": -58389
+    },
+    {
+      "web_name": "Pulisic",
+      "nett_transfers": -54102
+    },
+    {
+      "web_name": "van Aanholt",
+      "nett_transfers": -37628
+    },
+    {
+      "web_name": "Tomori",
+      "nett_transfers": -36751
+    },
+    {
+      "web_name": "Ak\u00e9",
+      "nett_transfers": -27921
+    },
+    {
+      "web_name": "Mount",
+      "nett_transfers": -27029
+    },
+    {
+      "web_name": "Digne",
+      "nett_transfers": -22502
+    },
+    {
+      "web_name": "Firmino",
+      "nett_transfers": -20424
+    },
+    {
+      "web_name": "Tielemans",
+      "nett_transfers": -19163
+    },
+    {
+      "web_name": "Pukki",
+      "nett_transfers": -17605
+    },
+    {
+      "web_name": "Chilwell",
+      "nett_transfers": -17538
+    },
+    {
+      "web_name": "P\u00e9rez",
+      "nett_transfers": -16838
+    },
+    {
+      "web_name": "Ag\u00fcero",
+      "nett_transfers": -16546
+    },
+    {
+      "web_name": "McGinn",
+      "nett_transfers": -15017
+    },
+    {
+      "web_name": "Callum Wilson",
+      "nett_transfers": -14051
+    },
+    {
+      "web_name": "Mousset",
+      "nett_transfers": -12642
+    },
+    {
+      "web_name": "Ederson",
+      "nett_transfers": -10736
+    },
+    {
+      "web_name": "Bernardo Silva",
+      "nett_transfers": -10131
+    },
+    {
+      "web_name": "Jesus",
+      "nett_transfers": -10037
+    },
+    {
+      "web_name": "Alexander-Arnold",
+      "nett_transfers": -10029
+    },
+    {
+      "web_name": "Barnes",
+      "nett_transfers": -9400
+    },
+    {
+      "web_name": "Ayew",
+      "nett_transfers": -9297
+    },
+    {
+      "web_name": "Jorginho",
+      "nett_transfers": -7880
+    },
+    {
+      "web_name": "Guendouzi",
+      "nett_transfers": -7325
+    },
+    {
+      "web_name": "Pieters",
+      "nett_transfers": -7250
+    },
+    {
+      "web_name": "Zaha",
+      "nett_transfers": -7199
+    },
+    {
+      "web_name": "King",
+      "nett_transfers": -7168
+    },
+    {
+      "web_name": "Walker",
+      "nett_transfers": -6896
+    },
+    {
+      "web_name": "David Silva",
+      "nett_transfers": -6108
+    },
+    {
+      "web_name": "Lacazette",
+      "nett_transfers": -5900
+    },
+    {
+      "web_name": "Pope",
+      "nett_transfers": -5518
+    },
+    {
+      "web_name": "Kepa",
+      "nett_transfers": -5273
+    },
+    {
+      "web_name": "Man\u00e9",
+      "nett_transfers": -5231
+    },
+    {
+      "web_name": "Willian",
+      "nett_transfers": -4950
+    },
+    {
+      "web_name": "Ward",
+      "nett_transfers": -4937
+    },
+    {
+      "web_name": "Janmaat",
+      "nett_transfers": -4811
+    },
+    {
+      "web_name": "Patr\u00edcio",
+      "nett_transfers": -4789
+    },
+    {
+      "web_name": "Deulofeu",
+      "nett_transfers": -4452
+    },
+    {
+      "web_name": "Greenwood",
+      "nett_transfers": -4340
+    },
+    {
+      "web_name": "Leno",
+      "nett_transfers": -4140
+    },
+    {
+      "web_name": "Lascelles",
+      "nett_transfers": -4045
+    },
+    {
+      "web_name": "Adri\u00e1n",
+      "nett_transfers": -3780
+    },
+    {
+      "web_name": "Mina",
+      "nett_transfers": -3696
+    },
+    {
+      "web_name": "Traor\u00e9",
+      "nett_transfers": -3652
+    },
+    {
+      "web_name": "Yarmolenko",
+      "nett_transfers": -3502
+    },
+    {
+      "web_name": "Connolly",
+      "nett_transfers": -3421
+    },
+    {
+      "web_name": "Ceballos",
+      "nett_transfers": -3389
+    },
+    {
+      "web_name": "Vestergaard",
+      "nett_transfers": -3289
+    },
+    {
+      "web_name": "Pickford",
+      "nett_transfers": -3268
+    },
+    {
+      "web_name": "Ndombele",
+      "nett_transfers": -3188
+    },
+    {
+      "web_name": "Wesley",
+      "nett_transfers": -3132
+    },
+    {
+      "web_name": "Alonso",
+      "nett_transfers": -3030
+    },
+    {
+      "web_name": "Button",
+      "nett_transfers": -3011
+    },
+    {
+      "web_name": "Mendy",
+      "nett_transfers": -2555
+    },
+    {
+      "web_name": "Adam Smith",
+      "nett_transfers": -2516
+    },
+    {
+      "web_name": "Lovren",
+      "nett_transfers": -2471
+    },
+    {
+      "web_name": "Azpilicueta",
+      "nett_transfers": -2401
+    },
+    {
+      "web_name": "Barnes",
+      "nett_transfers": -2378
+    },
+    {
+      "web_name": "Ndidi",
+      "nett_transfers": -2311
+    },
+    {
+      "web_name": "David Luiz",
+      "nett_transfers": -2303
+    },
+    {
+      "web_name": "de Gea",
+      "nett_transfers": -2222
+    },
+    {
+      "web_name": "Boly",
+      "nett_transfers": -2170
+    },
+    {
+      "web_name": "Stones",
+      "nett_transfers": -1981
+    },
+    {
+      "web_name": "Haller",
+      "nett_transfers": -1962
+    },
+    {
+      "web_name": "Batshuayi",
+      "nett_transfers": -1947
+    },
+    {
+      "web_name": "Steve Cook",
+      "nett_transfers": -1847
+    },
+    {
+      "web_name": "Neves",
+      "nett_transfers": -1842
+    },
+    {
+      "web_name": "Eriksen",
+      "nett_transfers": -1840
+    },
+    {
+      "web_name": "Wijnaldum",
+      "nett_transfers": -1803
+    },
+    {
+      "web_name": "McNeil",
+      "nett_transfers": -1741
+    },
+    {
+      "web_name": "Chambers",
+      "nett_transfers": -1710
+    },
+    {
+      "web_name": "Gunn",
+      "nett_transfers": -1665
+    },
+    {
+      "web_name": "Diop",
+      "nett_transfers": -1656
+    },
+    {
+      "web_name": "Hudson-Odoi",
+      "nett_transfers": -1632
+    },
+    {
+      "web_name": "Maguire",
+      "nett_transfers": -1629
+    },
+    {
+      "web_name": "Matip",
+      "nett_transfers": -1594
+    },
+    {
+      "web_name": "Maitland-Niles",
+      "nett_transfers": -1592
+    },
+    {
+      "web_name": "El Ghazi",
+      "nett_transfers": -1524
+    },
+    {
+      "web_name": "Fabinho",
+      "nett_transfers": -1492
+    },
+    {
+      "web_name": "Lloris",
+      "nett_transfers": -1471
+    },
+    {
+      "web_name": "Ramsdale",
+      "nett_transfers": -1463
+    },
+    {
+      "web_name": "Wood",
+      "nett_transfers": -1458
+    },
+    {
+      "web_name": "Mahrez",
+      "nett_transfers": -1438
+    },
+    {
+      "web_name": "P\u00e9p\u00e9",
+      "nett_transfers": -1433
+    },
+    {
+      "web_name": "Cancelo",
+      "nett_transfers": -1426
+    },
+    {
+      "web_name": "Douglas Luiz",
+      "nett_transfers": -1412
+    },
+    {
+      "web_name": "Fraser",
+      "nett_transfers": -1389
+    },
+    {
+      "web_name": "Mings",
+      "nett_transfers": -1371
+    },
+    {
+      "web_name": "Hanley",
+      "nett_transfers": -1310
+    },
+    {
+      "web_name": "Taylor",
+      "nett_transfers": -1304
+    },
+    {
+      "web_name": "Wickham",
+      "nett_transfers": -1290
+    },
+    {
+      "web_name": "O'Connell",
+      "nett_transfers": -1217
+    },
+    {
+      "web_name": "Holebas",
+      "nett_transfers": -1157
+    },
+    {
+      "web_name": "Coleman",
+      "nett_transfers": -1110
+    },
+    {
+      "web_name": "Felipe Anderson",
+      "nett_transfers": -1104
+    },
+    {
+      "web_name": "Hayden",
+      "nett_transfers": -1095
+    },
+    {
+      "web_name": "Sokratis",
+      "nett_transfers": -1091
+    },
+    {
+      "web_name": "Sigurdsson",
+      "nett_transfers": -1090
+    },
+    {
+      "web_name": "Fleck",
+      "nett_transfers": -1084
+    },
+    {
+      "web_name": "Tierney",
+      "nett_transfers": -1051
+    },
+    {
+      "web_name": "Fabianski",
+      "nett_transfers": -996
+    },
+    {
+      "web_name": "Pereira",
+      "nett_transfers": -967
+    },
+    {
+      "web_name": "Joelinton",
+      "nett_transfers": -955
+    },
+    {
+      "web_name": "Rose",
+      "nett_transfers": -951
+    },
+    {
+      "web_name": "McGovern",
+      "nett_transfers": -930
+    },
+    {
+      "web_name": "Lamela",
+      "nett_transfers": -919
+    },
+    {
+      "web_name": "Stevens",
+      "nett_transfers": -902
+    },
+    {
+      "web_name": "Snodgrass",
+      "nett_transfers": -899
+    },
+    {
+      "web_name": "Nakamba",
+      "nett_transfers": -869
+    },
+    {
+      "web_name": "Emerson",
+      "nett_transfers": -866
+    },
+    {
+      "web_name": "Saka",
+      "nett_transfers": -815
+    },
+    {
+      "web_name": "Pr\u00f6dl",
+      "nett_transfers": -812
+    },
+    {
+      "web_name": "Lowton",
+      "nett_transfers": -797
+    },
+    {
+      "web_name": "Stekelenburg",
+      "nett_transfers": -775
+    },
+    {
+      "web_name": "Schlupp",
+      "nett_transfers": -766
+    },
+    {
+      "web_name": "Zinchenko",
+      "nett_transfers": -750
+    },
+    {
+      "web_name": "Buend\u00eda",
+      "nett_transfers": -738
+    },
+    {
+      "web_name": "G\u00fcndogan",
+      "nett_transfers": -732
+    },
+    {
+      "web_name": "Milivojevic",
+      "nett_transfers": -703
+    },
+    {
+      "web_name": "Sch\u00e4r",
+      "nett_transfers": -679
+    },
+    {
+      "web_name": "Pogba",
+      "nett_transfers": -676
+    },
+    {
+      "web_name": "Martinelli",
+      "nett_transfers": -637
+    },
+    {
+      "web_name": "Robertson",
+      "nett_transfers": -627
+    },
+    {
+      "web_name": "Doucour\u00e9",
+      "nett_transfers": -609
+    },
+    {
+      "web_name": "\u00d6zil",
+      "nett_transfers": -588
+    },
+    {
+      "web_name": "Winks",
+      "nett_transfers": -533
+    },
+    {
+      "web_name": "Lanzini",
+      "nett_transfers": -522
+    },
+    {
+      "web_name": "Engels",
+      "nett_transfers": -515
+    },
+    {
+      "web_name": "Oriol Romeu",
+      "nett_transfers": -508
+    },
+    {
+      "web_name": "Choudhury",
+      "nett_transfers": -507
+    },
+    {
+      "web_name": "Roberto",
+      "nett_transfers": -496
+    },
+    {
+      "web_name": "Kean",
+      "nett_transfers": -493
+    },
+    {
+      "web_name": "Nketiah",
+      "nett_transfers": -492
+    },
+    {
+      "web_name": "Fredericks",
+      "nett_transfers": -469
+    },
+    {
+      "web_name": "Stearman",
+      "nett_transfers": -458
+    },
+    {
+      "web_name": "Matthew Longstaff",
+      "nett_transfers": -450
+    },
+    {
+      "web_name": "Mee",
+      "nett_transfers": -448
+    },
+    {
+      "web_name": "Westwood",
+      "nett_transfers": -443
+    },
+    {
+      "web_name": "Giroud",
+      "nett_transfers": -434
+    },
+    {
+      "web_name": "Williams",
+      "nett_transfers": -420
+    },
+    {
+      "web_name": "King",
+      "nett_transfers": -401
+    },
+    {
+      "web_name": "Laporte",
+      "nett_transfers": -393
+    },
+    {
+      "web_name": "Foster",
+      "nett_transfers": -393
+    },
+    {
+      "web_name": "Montoya",
+      "nett_transfers": -386
+    },
+    {
+      "web_name": "Elneny",
+      "nett_transfers": -377
+    },
+    {
+      "web_name": "Hughes",
+      "nett_transfers": -373
+    },
+    {
+      "web_name": "Torreira",
+      "nett_transfers": -362
+    },
+    {
+      "web_name": "Gro\u00df",
+      "nett_transfers": -352
+    },
+    {
+      "web_name": "Lansbury",
+      "nett_transfers": -339
+    },
+    {
+      "web_name": "Noble",
+      "nett_transfers": -328
+    },
+    {
+      "web_name": "Johnson",
+      "nett_transfers": -327
+    },
+    {
+      "web_name": "Pedro",
+      "nett_transfers": -302
+    },
+    {
+      "web_name": "March",
+      "nett_transfers": -294
+    },
+    {
+      "web_name": "Kant\u00e9",
+      "nett_transfers": -282
+    },
+    {
+      "web_name": "Iwobi",
+      "nett_transfers": -280
+    },
+    {
+      "web_name": "Begovic",
+      "nett_transfers": -267
+    },
+    {
+      "web_name": "Robinson",
+      "nett_transfers": -264
+    },
+    {
+      "web_name": "Morgan",
+      "nett_transfers": -263
+    },
+    {
+      "web_name": "Kolasinac",
+      "nett_transfers": -262
+    },
+    {
+      "web_name": "Aarons",
+      "nett_transfers": -262
+    },
+    {
+      "web_name": "Norwood",
+      "nett_transfers": -258
+    },
+    {
+      "web_name": "Walker-Peters",
+      "nett_transfers": -257
+    },
+    {
+      "web_name": "Rice",
+      "nett_transfers": -256
+    },
+    {
+      "web_name": "Walcott",
+      "nett_transfers": -253
+    },
+    {
+      "web_name": "Guilbert",
+      "nett_transfers": -250
+    },
+    {
+      "web_name": "Trybull",
+      "nett_transfers": -244
+    },
+    {
+      "web_name": "Masuaku",
+      "nett_transfers": -244
+    },
+    {
+      "web_name": "Hart",
+      "nett_transfers": -243
+    },
+    {
+      "web_name": "Bardsley",
+      "nett_transfers": -242
+    },
+    {
+      "web_name": "Murray",
+      "nett_transfers": -239
+    },
+    {
+      "web_name": "Duffy",
+      "nett_transfers": -233
+    },
+    {
+      "web_name": "Bednarek",
+      "nett_transfers": -231
+    },
+    {
+      "web_name": "Redmond",
+      "nett_transfers": -228
+    },
+    {
+      "web_name": "Skipp",
+      "nett_transfers": -224
+    },
+    {
+      "web_name": "Trossard",
+      "nett_transfers": -221
+    },
+    {
+      "web_name": "Slattery",
+      "nett_transfers": -217
+    },
+    {
+      "web_name": "Yedlin",
+      "nett_transfers": -206
+    },
+    {
+      "web_name": "Xhaka",
+      "nett_transfers": -193
+    },
+    {
+      "web_name": "Mepham",
+      "nett_transfers": -192
+    },
+    {
+      "web_name": "Townsend",
+      "nett_transfers": -187
+    },
+    {
+      "web_name": "Barkley",
+      "nett_transfers": -186
+    },
+    {
+      "web_name": "Heise",
+      "nett_transfers": -186
+    },
+    {
+      "web_name": "Gray",
+      "nett_transfers": -185
+    },
+    {
+      "web_name": "Milner",
+      "nett_transfers": -174
+    },
+    {
+      "web_name": "Almir\u00f3n",
+      "nett_transfers": -153
+    },
+    {
+      "web_name": "Andone",
+      "nett_transfers": -151
+    },
+    {
+      "web_name": "Benteke",
+      "nett_transfers": -149
+    },
+    {
+      "web_name": "Dawson",
+      "nett_transfers": -143
+    },
+    {
+      "web_name": "Bravo",
+      "nett_transfers": -141
+    },
+    {
+      "web_name": "McCarthy",
+      "nett_transfers": -140
+    },
+    {
+      "web_name": "McGoldrick",
+      "nett_transfers": -137
+    },
+    {
+      "web_name": "Cutrone",
+      "nett_transfers": -136
+    },
+    {
+      "web_name": "Pereyra",
+      "nett_transfers": -134
+    },
+    {
+      "web_name": "Djenepo",
+      "nett_transfers": -133
+    },
+    {
+      "web_name": "Davis",
+      "nett_transfers": -132
+    },
+    {
+      "web_name": "Hennessey",
+      "nett_transfers": -130
+    },
+    {
+      "web_name": "Davies",
+      "nett_transfers": -127
+    },
+    {
+      "web_name": "Gudmundsson",
+      "nett_transfers": -125
+    },
+    {
+      "web_name": "Bernard",
+      "nett_transfers": -125
+    },
+    {
+      "web_name": "Sharp",
+      "nett_transfers": -124
+    },
+    {
+      "web_name": "Coady",
+      "nett_transfers": -124
+    },
+    {
+      "web_name": "Adams",
+      "nett_transfers": -123
+    },
+    {
+      "web_name": "Delph",
+      "nett_transfers": -122
+    },
+    {
+      "web_name": "Rodriguez",
+      "nett_transfers": -119
+    },
+    {
+      "web_name": "Boufal",
+      "nett_transfers": -117
+    },
+    {
+      "web_name": "Parrott",
+      "nett_transfers": -116
+    },
+    {
+      "web_name": "Cleverley",
+      "nett_transfers": -116
+    },
+    {
+      "web_name": "Pr\u00f6pper",
+      "nett_transfers": -115
+    },
+    {
+      "web_name": "Matic",
+      "nett_transfers": -113
+    },
+    {
+      "web_name": "Surridge",
+      "nett_transfers": -112
+    },
+    {
+      "web_name": "Garner",
+      "nett_transfers": -110
+    },
+    {
+      "web_name": "Long",
+      "nett_transfers": -109
+    },
+    {
+      "web_name": "Andr\u00e9 Gomes",
+      "nett_transfers": -106
+    },
+    {
+      "web_name": "Lewis",
+      "nett_transfers": -106
+    },
+    {
+      "web_name": "Mata",
+      "nett_transfers": -105
+    },
+    {
+      "web_name": "Success",
+      "nett_transfers": -99
+    },
+    {
+      "web_name": "H\u00f8jbjerg",
+      "nett_transfers": -98
+    },
+    {
+      "web_name": "Lo Celso",
+      "nett_transfers": -97
+    },
+    {
+      "web_name": "Carlos S\u00e1nchez",
+      "nett_transfers": -97
+    },
+    {
+      "web_name": "Tosun",
+      "nett_transfers": -96
+    },
+    {
+      "web_name": "Foden",
+      "nett_transfers": -94
+    },
+    {
+      "web_name": "Yoshida",
+      "nett_transfers": -93
+    },
+    {
+      "web_name": "Zabaleta",
+      "nett_transfers": -92
+    },
+    {
+      "web_name": "Wilshere",
+      "nett_transfers": -91
+    },
+    {
+      "web_name": "Forster",
+      "nett_transfers": -89
+    },
+    {
+      "web_name": "Mkhitaryan",
+      "nett_transfers": -87
+    },
+    {
+      "web_name": "Atsu",
+      "nett_transfers": -87
+    },
+    {
+      "web_name": "Leitner",
+      "nett_transfers": -84
+    },
+    {
+      "web_name": "Taylor",
+      "nett_transfers": -83
+    },
+    {
+      "web_name": "Deeney",
+      "nett_transfers": -82
+    },
+    {
+      "web_name": "Rojo",
+      "nett_transfers": -78
+    },
+    {
+      "web_name": "Antonio",
+      "nett_transfers": -76
+    },
+    {
+      "web_name": "Willock",
+      "nett_transfers": -74
+    },
+    {
+      "web_name": "Billing",
+      "nett_transfers": -74
+    },
+    {
+      "web_name": "Colback",
+      "nett_transfers": -73
+    },
+    {
+      "web_name": "Chalobah",
+      "nett_transfers": -72
+    },
+    {
+      "web_name": "Ruddy",
+      "nett_transfers": -70
+    },
+    {
+      "web_name": "Monreal",
+      "nett_transfers": -69
+    },
+    {
+      "web_name": "Albrighton",
+      "nett_transfers": -69
+    },
+    {
+      "web_name": "Armstrong",
+      "nett_transfers": -69
+    },
+    {
+      "web_name": "Obafemi",
+      "nett_transfers": -68
+    },
+    {
+      "web_name": "Hendrick",
+      "nett_transfers": -67
+    },
+    {
+      "web_name": "L\u00f6ssl",
+      "nett_transfers": -67
+    },
+    {
+      "web_name": "Gray",
+      "nett_transfers": -67
+    },
+    {
+      "web_name": "James",
+      "nett_transfers": -65
+    },
+    {
+      "web_name": "Chicharito",
+      "nett_transfers": -63
+    },
+    {
+      "web_name": "Sakho",
+      "nett_transfers": -61
+    },
+    {
+      "web_name": "Lallana",
+      "nett_transfers": -61
+    },
+    {
+      "web_name": "Burn",
+      "nett_transfers": -60
+    },
+    {
+      "web_name": "Meyer",
+      "nett_transfers": -60
+    },
+    {
+      "web_name": "Bennett",
+      "nett_transfers": -60
+    },
+    {
+      "web_name": "Vinagre",
+      "nett_transfers": -59
+    },
+    {
+      "web_name": "Fernandinho",
+      "nett_transfers": -58
+    },
+    {
+      "web_name": "Eastwood",
+      "nett_transfers": -58
+    },
+    {
+      "web_name": "Longstaff",
+      "nett_transfers": -57
+    },
+    {
+      "web_name": "McBurnie",
+      "nett_transfers": -56
+    },
+    {
+      "web_name": "McLean",
+      "nett_transfers": -55
+    },
+    {
+      "web_name": "Hern\u00e1ndez",
+      "nett_transfers": -53
+    },
+    {
+      "web_name": "Fornals",
+      "nett_transfers": -53
+    },
+    {
+      "web_name": "Valery",
+      "nett_transfers": -52
+    },
+    {
+      "web_name": "Mart\u00ednez",
+      "nett_transfers": -51
+    },
+    {
+      "web_name": "Romero",
+      "nett_transfers": -50
+    },
+    {
+      "web_name": "Ritchie",
+      "nett_transfers": -50
+    },
+    {
+      "web_name": "Drmic",
+      "nett_transfers": -49
+    },
+    {
+      "web_name": "Mariappa",
+      "nett_transfers": -49
+    },
+    {
+      "web_name": "Drinkwater",
+      "nett_transfers": -47
+    },
+    {
+      "web_name": "Fahrmann",
+      "nett_transfers": -47
+    },
+    {
+      "web_name": "Holding",
+      "nett_transfers": -46
+    },
+    {
+      "web_name": "Welbeck",
+      "nett_transfers": -45
+    },
+    {
+      "web_name": "Clarke",
+      "nett_transfers": -43
+    },
+    {
+      "web_name": "Vallejo",
+      "nett_transfers": -43
+    },
+    {
+      "web_name": "Ward",
+      "nett_transfers": -42
+    },
+    {
+      "web_name": "Godfrey",
+      "nett_transfers": -42
+    },
+    {
+      "web_name": "Hourihane",
+      "nett_transfers": -37
+    },
+    {
+      "web_name": "Mustafi",
+      "nett_transfers": -36
+    },
+    {
+      "web_name": "Steer",
+      "nett_transfers": -36
+    },
+    {
+      "web_name": "Ibe",
+      "nett_transfers": -36
+    },
+    {
+      "web_name": "Cork",
+      "nett_transfers": -36
+    },
+    {
+      "web_name": "N'Lundulu",
+      "nett_transfers": -36
+    },
+    {
+      "web_name": "Caballero",
+      "nett_transfers": -35
+    },
+    {
+      "web_name": "Gibson",
+      "nett_transfers": -35
+    },
+    {
+      "web_name": "Saint-Maximin",
+      "nett_transfers": -35
+    },
+    {
+      "web_name": "Nyland",
+      "nett_transfers": -33
+    },
+    {
+      "web_name": "Solanke",
+      "nett_transfers": -33
+    },
+    {
+      "web_name": "Camarasa",
+      "nett_transfers": -33
+    },
+    {
+      "web_name": "Foyth",
+      "nett_transfers": -33
+    },
+    {
+      "web_name": "Wanyama",
+      "nett_transfers": -33
+    },
+    {
+      "web_name": "Gibbs-White",
+      "nett_transfers": -33
+    },
+    {
+      "web_name": "Travers",
+      "nett_transfers": -32
+    },
+    {
+      "web_name": "Stacey",
+      "nett_transfers": -28
+    },
+    {
+      "web_name": "Muto",
+      "nett_transfers": -28
+    },
+    {
+      "web_name": "Srbeny",
+      "nett_transfers": -27
+    },
+    {
+      "web_name": "Idah",
+      "nett_transfers": -27
+    },
+    {
+      "web_name": "Daniels",
+      "nett_transfers": -26
+    },
+    {
+      "web_name": "Boruc",
+      "nett_transfers": -26
+    },
+    {
+      "web_name": "Lerma",
+      "nett_transfers": -26
+    },
+    {
+      "web_name": "Zappacosta",
+      "nett_transfers": -26
+    },
+    {
+      "web_name": "Fuchs",
+      "nett_transfers": -26
+    },
+    {
+      "web_name": "San\u00e9",
+      "nett_transfers": -26
+    },
+    {
+      "web_name": "Amadou",
+      "nett_transfers": -26
+    },
+    {
+      "web_name": "Dreher",
+      "nett_transfers": -25
+    },
+    {
+      "web_name": "Moore",
+      "nett_transfers": -25
+    },
+    {
+      "web_name": "Jakupovic",
+      "nett_transfers": -24
+    },
+    {
+      "web_name": "Dalot",
+      "nett_transfers": -24
+    },
+    {
+      "web_name": "Grant",
+      "nett_transfers": -24
+    },
+    {
+      "web_name": "Janssen",
+      "nett_transfers": -24
+    },
+    {
+      "web_name": "Stiepermann",
+      "nett_transfers": -23
+    },
+    {
+      "web_name": "Gomes",
+      "nett_transfers": -23
+    },
+    {
+      "web_name": "Beller\u00edn",
+      "nett_transfers": -22
+    },
+    {
+      "web_name": "Dann",
+      "nett_transfers": -22
+    },
+    {
+      "web_name": "Brewster",
+      "nett_transfers": -22
+    },
+    {
+      "web_name": "Nelson",
+      "nett_transfers": -21
+    },
+    {
+      "web_name": "Hause",
+      "nett_transfers": -20
+    },
+    {
+      "web_name": "S\u00e1nchez",
+      "nett_transfers": -20
+    },
+    {
+      "web_name": "Dier",
+      "nett_transfers": -20
+    },
+    {
+      "web_name": "Brooks",
+      "nett_transfers": -18
+    },
+    {
+      "web_name": "Morrison",
+      "nett_transfers": -18
+    },
+    {
+      "web_name": "Gallagher",
+      "nett_transfers": -18
+    },
+    {
+      "web_name": "Lennon",
+      "nett_transfers": -17
+    },
+    {
+      "web_name": "Krafth",
+      "nett_transfers": -17
+    },
+    {
+      "web_name": "Kalinic",
+      "nett_transfers": -16
+    },
+    {
+      "web_name": "Tuanzebe",
+      "nett_transfers": -16
+    },
+    {
+      "web_name": "Ki Sung-yueng",
+      "nett_transfers": -16
+    },
+    {
+      "web_name": "Danso",
+      "nett_transfers": -16
+    },
+    {
+      "web_name": "Kodjia",
+      "nett_transfers": -15
+    },
+    {
+      "web_name": "Garcia",
+      "nett_transfers": -15
+    },
+    {
+      "web_name": "Darlow",
+      "nett_transfers": -15
+    },
+    {
+      "web_name": "Trippier",
+      "nett_transfers": -15
+    },
+    {
+      "web_name": "Navarro",
+      "nett_transfers": -15
+    },
+    {
+      "web_name": "Peacock-Farrell",
+      "nett_transfers": -14
+    },
+    {
+      "web_name": "Quina",
+      "nett_transfers": -14
+    },
+    {
+      "web_name": "Diangana",
+      "nett_transfers": -14
+    },
+    {
+      "web_name": "Bong",
+      "nett_transfers": -13
+    },
+    {
+      "web_name": "Gomes",
+      "nett_transfers": -13
+    },
+    {
+      "web_name": "Sessegnon",
+      "nett_transfers": -13
+    },
+    {
+      "web_name": "Locadia",
+      "nett_transfers": -12
+    },
+    {
+      "web_name": "Shaqiri",
+      "nett_transfers": -12
+    },
+    {
+      "web_name": "Lukaku",
+      "nett_transfers": -12
+    },
+    {
+      "web_name": "Jota",
+      "nett_transfers": -11
+    },
+    {
+      "web_name": "Jahanbakhsh",
+      "nett_transfers": -11
+    },
+    {
+      "web_name": "Smalling",
+      "nett_transfers": -11
+    },
+    {
+      "web_name": "Aarons",
+      "nett_transfers": -11
+    },
+    {
+      "web_name": "Klose",
+      "nett_transfers": -11
+    },
+    {
+      "web_name": "Roberts",
+      "nett_transfers": -11
+    },
+    {
+      "web_name": "Byram",
+      "nett_transfers": -11
+    },
+    {
+      "web_name": "Dahlberg",
+      "nett_transfers": -11
+    },
+    {
+      "web_name": "Balogun",
+      "nett_transfers": -10
+    },
+    {
+      "web_name": "Loftus-Cheek",
+      "nett_transfers": -10
+    },
+    {
+      "web_name": "Justin",
+      "nett_transfers": -10
+    },
+    {
+      "web_name": "C\u00e9dric",
+      "nett_transfers": -10
+    },
+    {
+      "web_name": "Lewis Cook",
+      "nett_transfers": -9
+    },
+    {
+      "web_name": "Lonergan",
+      "nett_transfers": -9
+    },
+    {
+      "web_name": "Vorm",
+      "nett_transfers": -9
+    },
+    {
+      "web_name": "Sa\u00efss",
+      "nett_transfers": -9
+    },
+    {
+      "web_name": "Mavropanos",
+      "nett_transfers": -8
+    },
+    {
+      "web_name": "Danjuma",
+      "nett_transfers": -8
+    },
+    {
+      "web_name": "Kenedy",
+      "nett_transfers": -8
+    },
+    {
+      "web_name": "Freeman",
+      "nett_transfers": -8
+    },
+    {
+      "web_name": "Neto",
+      "nett_transfers": -8
+    },
+    {
+      "web_name": "Surman",
+      "nett_transfers": -7
+    },
+    {
+      "web_name": "Gbamin",
+      "nett_transfers": -7
+    },
+    {
+      "web_name": "Osborn",
+      "nett_transfers": -7
+    },
+    {
+      "web_name": "Obiang",
+      "nett_transfers": -7
+    },
+    {
+      "web_name": "Austin",
+      "nett_transfers": -6
+    },
+    {
+      "web_name": "Lemina",
+      "nett_transfers": -6
+    },
+    {
+      "web_name": "Balbuena",
+      "nett_transfers": -6
+    },
+    {
+      "web_name": "Vydra",
+      "nett_transfers": -5
+    },
+    {
+      "web_name": "Ghezzal",
+      "nett_transfers": -5
+    },
+    {
+      "web_name": "Bailly",
+      "nett_transfers": -5
+    },
+    {
+      "web_name": "Joselu",
+      "nett_transfers": -5
+    },
+    {
+      "web_name": "Norris",
+      "nett_transfers": -5
+    },
+    {
+      "web_name": "Koscielny",
+      "nett_transfers": -4
+    },
+    {
+      "web_name": "Bissouma",
+      "nett_transfers": -4
+    },
+    {
+      "web_name": "Gilmour",
+      "nett_transfers": -4
+    },
+    {
+      "web_name": "Darmian",
+      "nett_transfers": -4
+    },
+    {
+      "web_name": "Verrips",
+      "nett_transfers": -4
+    },
+    {
+      "web_name": "Elyounoussi",
+      "nett_transfers": -4
+    },
+    {
+      "web_name": "Capoue",
+      "nett_transfers": -4
+    },
+    {
+      "web_name": "Danilo",
+      "nett_transfers": -3
+    },
+    {
+      "web_name": "Duffy",
+      "nett_transfers": -3
+    },
+    {
+      "web_name": "Clarke",
+      "nett_transfers": -2
+    },
+    {
+      "web_name": "Arnautovic",
+      "nett_transfers": -2
+    },
+    {
+      "web_name": "Ajeti",
+      "nett_transfers": -2
+    },
+    {
+      "web_name": "R\u00fcdiger",
+      "nett_transfers": -1
+    },
+    {
+      "web_name": "Baningime",
+      "nett_transfers": -1
+    },
+    {
+      "web_name": "Mignolet",
+      "nett_transfers": -1
+    },
+    {
+      "web_name": "Murphy",
+      "nett_transfers": -1
+    },
+    {
+      "web_name": "Nkoudou",
+      "nett_transfers": -1
+    },
+    {
+      "web_name": "Dele-Bashiru",
+      "nett_transfers": -1
+    },
+    {
+      "web_name": "Jenkinson",
+      "nett_transfers": 0
+    },
+    {
+      "web_name": "Gueye",
+      "nett_transfers": 0
+    },
+    {
+      "web_name": "Kilkenny",
+      "nett_transfers": 1
+    },
+    {
+      "web_name": "Lookman",
+      "nett_transfers": 1
+    },
+    {
+      "web_name": "Gordon",
+      "nett_transfers": 1
+    },
+    {
+      "web_name": "Camacho",
+      "nett_transfers": 1
+    },
+    {
+      "web_name": "Be\u0161i\u0107",
+      "nett_transfers": 1
+    },
+    {
+      "web_name": "Green",
+      "nett_transfers": 2
+    },
+    {
+      "web_name": "Stanislas",
+      "nett_transfers": 2
+    },
+    {
+      "web_name": "Bernardo",
+      "nett_transfers": 2
+    },
+    {
+      "web_name": "Izquierdo",
+      "nett_transfers": 2
+    },
+    {
+      "web_name": "Knockaert",
+      "nett_transfers": 2
+    },
+    {
+      "web_name": "Defour",
+      "nett_transfers": 2
+    },
+    {
+      "web_name": "Hoedt",
+      "nett_transfers": 2
+    },
+    {
+      "web_name": "Sema",
+      "nett_transfers": 2
+    },
+    {
+      "web_name": "Costa",
+      "nett_transfers": 2
+    },
+    {
+      "web_name": "Bjarnason",
+      "nett_transfers": 3
+    },
+    {
+      "web_name": "Gosling",
+      "nett_transfers": 3
+    },
+    {
+      "web_name": "Kelleher",
+      "nett_transfers": 3
+    },
+    {
+      "web_name": "Lejeune",
+      "nett_transfers": 3
+    },
+    {
+      "web_name": "Vrancic",
+      "nett_transfers": 3
+    },
+    {
+      "web_name": "Perry",
+      "nett_transfers": 4
+    },
+    {
+      "web_name": "Goodridge",
+      "nett_transfers": 5
+    },
+    {
+      "web_name": "Chester",
+      "nett_transfers": 6
+    },
+    {
+      "web_name": "Saydee",
+      "nett_transfers": 6
+    },
+    {
+      "web_name": "Freeman",
+      "nett_transfers": 6
+    },
+    {
+      "web_name": "Amos",
+      "nett_transfers": 6
+    },
+    {
+      "web_name": "Otasowie",
+      "nett_transfers": 6
+    },
+    {
+      "web_name": "Cavaleiro",
+      "nett_transfers": 7
+    },
+    {
+      "web_name": "Riedewald",
+      "nett_transfers": 8
+    },
+    {
+      "web_name": "Jones",
+      "nett_transfers": 11
+    },
+    {
+      "web_name": "Davies",
+      "nett_transfers": 12
+    },
+    {
+      "web_name": "Johnson",
+      "nett_transfers": 12
+    },
+    {
+      "web_name": "Praet",
+      "nett_transfers": 14
+    },
+    {
+      "web_name": "Elliott",
+      "nett_transfers": 14
+    },
+    {
+      "web_name": "Jones",
+      "nett_transfers": 15
+    },
+    {
+      "web_name": "Jagielka",
+      "nett_transfers": 15
+    },
+    {
+      "web_name": "Guehi",
+      "nett_transfers": 16
+    },
+    {
+      "web_name": "Baines",
+      "nett_transfers": 16
+    },
+    {
+      "web_name": "Holland",
+      "nett_transfers": 16
+    },
+    {
+      "web_name": "Cundle",
+      "nett_transfers": 16
+    },
+    {
+      "web_name": "Kelly",
+      "nett_transfers": 17
+    },
+    {
+      "web_name": "Famewo",
+      "nett_transfers": 18
+    },
+    {
+      "web_name": "Sarr",
+      "nett_transfers": 18
+    },
+    {
+      "web_name": "Keane",
+      "nett_transfers": 23
+    },
+    {
+      "web_name": "Foulquier",
+      "nett_transfers": 23
+    },
+    {
+      "web_name": "Francis",
+      "nett_transfers": 24
+    },
+    {
+      "web_name": "Ampadu",
+      "nett_transfers": 24
+    },
+    {
+      "web_name": "Ashley-Seal",
+      "nett_transfers": 24
+    },
+    {
+      "web_name": "Masina",
+      "nett_transfers": 29
+    },
+    {
+      "web_name": "Brady",
+      "nett_transfers": 30
+    },
+    {
+      "web_name": "Basham",
+      "nett_transfers": 33
+    },
+    {
+      "web_name": "Kouyat\u00e9",
+      "nett_transfers": 35
+    },
+    {
+      "web_name": "Zimmermann",
+      "nett_transfers": 42
+    },
+    {
+      "web_name": "Xande Silva",
+      "nett_transfers": 42
+    },
+    {
+      "web_name": "Gayle",
+      "nett_transfers": 50
+    },
+    {
+      "web_name": "Driscoll-Glennon",
+      "nett_transfers": 59
+    },
+    {
+      "web_name": "Mair",
+      "nett_transfers": 59
+    },
+    {
+      "web_name": "Young",
+      "nett_transfers": 61
+    },
+    {
+      "web_name": "Ogbonna",
+      "nett_transfers": 71
+    },
+    {
+      "web_name": "Niasse",
+      "nett_transfers": 75
+    },
+    {
+      "web_name": "Alzate",
+      "nett_transfers": 76
+    },
+    {
+      "web_name": "Christensen",
+      "nett_transfers": 76
+    },
+    {
+      "web_name": "Carson",
+      "nett_transfers": 81
+    },
+    {
+      "web_name": "Lewis",
+      "nett_transfers": 84
+    },
+    {
+      "web_name": "Austin",
+      "nett_transfers": 84
+    },
+    {
+      "web_name": "Jota",
+      "nett_transfers": 84
+    },
+    {
+      "web_name": "Woodman",
+      "nett_transfers": 86
+    },
+    {
+      "web_name": "Baluta",
+      "nett_transfers": 88
+    },
+    {
+      "web_name": "Stephens",
+      "nett_transfers": 94
+    },
+    {
+      "web_name": "Kabasele",
+      "nett_transfers": 101
+    },
+    {
+      "web_name": "Amartey",
+      "nett_transfers": 102
+    },
+    {
+      "web_name": "Konsa",
+      "nett_transfers": 109
+    },
+    {
+      "web_name": "Shaw",
+      "nett_transfers": 122
+    },
+    {
+      "web_name": "Whiteman",
+      "nett_transfers": 124
+    },
+    {
+      "web_name": "Carroll",
+      "nett_transfers": 144
+    },
+    {
+      "web_name": "Heaton",
+      "nett_transfers": 152
+    },
+    {
+      "web_name": "Dummett",
+      "nett_transfers": 188
+    },
+    {
+      "web_name": "Long",
+      "nett_transfers": 196
+    },
+    {
+      "web_name": "Webster",
+      "nett_transfers": 241
+    },
+    {
+      "web_name": "Mooy",
+      "nett_transfers": 254
+    },
+    {
+      "web_name": "Manquillo",
+      "nett_transfers": 264
+    },
+    {
+      "web_name": "Holgate",
+      "nett_transfers": 266
+    },
+    {
+      "web_name": "Krul",
+      "nett_transfers": 269
+    },
+    {
+      "web_name": "McArthur",
+      "nett_transfers": 272
+    },
+    {
+      "web_name": "Harry Wilson",
+      "nett_transfers": 283
+    },
+    {
+      "web_name": "Henderson",
+      "nett_transfers": 298
+    },
+    {
+      "web_name": "Zouma",
+      "nett_transfers": 303
+    },
+    {
+      "web_name": "Cathcart",
+      "nett_transfers": 321
+    },
+    {
+      "web_name": "Schneiderlin",
+      "nett_transfers": 344
+    },
+    {
+      "web_name": "Jonny",
+      "nett_transfers": 360
+    },
+    {
+      "web_name": "McCarthy",
+      "nett_transfers": 362
+    },
+    {
+      "web_name": "Bertrand",
+      "nett_transfers": 367
+    },
+    {
+      "web_name": "Origi",
+      "nett_transfers": 399
+    },
+    {
+      "web_name": "Fred",
+      "nett_transfers": 405
+    },
+    {
+      "web_name": "Kayal",
+      "nett_transfers": 450
+    },
+    {
+      "web_name": "Kilman",
+      "nett_transfers": 454
+    },
+    {
+      "web_name": "Lingard",
+      "nett_transfers": 461
+    },
+    {
+      "web_name": "Rodrigo",
+      "nett_transfers": 555
+    },
+    {
+      "web_name": "Dubravka",
+      "nett_transfers": 579
+    },
+    {
+      "web_name": "El Mohamady",
+      "nett_transfers": 585
+    },
+    {
+      "web_name": "Stephens",
+      "nett_transfers": 590
+    },
+    {
+      "web_name": "Tettey",
+      "nett_transfers": 612
+    },
+    {
+      "web_name": "Angeli\u00f1o",
+      "nett_transfers": 618
+    },
+    {
+      "web_name": "Gomez",
+      "nett_transfers": 640
+    },
+    {
+      "web_name": "Kiko Femen\u00eda",
+      "nett_transfers": 654
+    },
+    {
+      "web_name": "S\u00e1nchez",
+      "nett_transfers": 663
+    },
+    {
+      "web_name": "Egan",
+      "nett_transfers": 666
+    },
+    {
+      "web_name": "Otamendi",
+      "nett_transfers": 735
+    },
+    {
+      "web_name": "Henderson",
+      "nett_transfers": 754
+    },
+    {
+      "web_name": "Tarkowski",
+      "nett_transfers": 812
+    },
+    {
+      "web_name": "Fern\u00e1ndez",
+      "nett_transfers": 923
+    },
+    {
+      "web_name": "Keita",
+      "nett_transfers": 964
+    },
+    {
+      "web_name": "Schelotto",
+      "nett_transfers": 1004
+    },
+    {
+      "web_name": "Ward-Prowse",
+      "nett_transfers": 1006
+    },
+    {
+      "web_name": "Tr\u00e9z\u00e9guet",
+      "nett_transfers": 1007
+    },
+    {
+      "web_name": "Mendy",
+      "nett_transfers": 1049
+    },
+    {
+      "web_name": "Gibson",
+      "nett_transfers": 1054
+    },
+    {
+      "web_name": "Cresswell",
+      "nett_transfers": 1105
+    },
+    {
+      "web_name": "Henderson",
+      "nett_transfers": 1471
+    },
+    {
+      "web_name": "Ramsay",
+      "nett_transfers": 1547
+    },
+    {
+      "web_name": "James",
+      "nett_transfers": 1555
+    },
+    {
+      "web_name": "Tomkins",
+      "nett_transfers": 1564
+    },
+    {
+      "web_name": "Lindel\u00f6f",
+      "nett_transfers": 1820
+    },
+    {
+      "web_name": "Sidib\u00e9",
+      "nett_transfers": 1822
+    },
+    {
+      "web_name": "Wan-Bissaka",
+      "nett_transfers": 2142
+    },
+    {
+      "web_name": "Doherty",
+      "nett_transfers": 2173
+    },
+    {
+      "web_name": "Chamberlain",
+      "nett_transfers": 2226
+    },
+    {
+      "web_name": "Maupay",
+      "nett_transfers": 2256
+    },
+    {
+      "web_name": "Cahill",
+      "nett_transfers": 2460
+    },
+    {
+      "web_name": "Clark",
+      "nett_transfers": 2467
+    },
+    {
+      "web_name": "Targett",
+      "nett_transfers": 2730
+    },
+    {
+      "web_name": "McTominay",
+      "nett_transfers": 2734
+    },
+    {
+      "web_name": "Vertonghen",
+      "nett_transfers": 2927
+    },
+    {
+      "web_name": "Alderweireld",
+      "nett_transfers": 3428
+    },
+    {
+      "web_name": "Kovacic",
+      "nett_transfers": 3486
+    },
+    {
+      "web_name": "Iheanacho",
+      "nett_transfers": 3500
+    },
+    {
+      "web_name": "Rico",
+      "nett_transfers": 3799
+    },
+    {
+      "web_name": "Ryan",
+      "nett_transfers": 4318
+    },
+    {
+      "web_name": "Alisson",
+      "nett_transfers": 4319
+    },
+    {
+      "web_name": "Moutinho",
+      "nett_transfers": 4357
+    },
+    {
+      "web_name": "Reid",
+      "nett_transfers": 4542
+    },
+    {
+      "web_name": "Chong",
+      "nett_transfers": 5163
+    },
+    {
+      "web_name": "Simpson",
+      "nett_transfers": 5781
+    },
+    {
+      "web_name": "Lucas Moura",
+      "nett_transfers": 6030
+    },
+    {
+      "web_name": "Gazzaniga",
+      "nett_transfers": 6032
+    },
+    {
+      "web_name": "Sissoko",
+      "nett_transfers": 6891
+    },
+    {
+      "web_name": "Calvert-Lewin",
+      "nett_transfers": 7134
+    },
+    {
+      "web_name": "Martin",
+      "nett_transfers": 8187
+    },
+    {
+      "web_name": "Lundstram",
+      "nett_transfers": 8254
+    },
+    {
+      "web_name": "Dendoncker",
+      "nett_transfers": 8408
+    },
+    {
+      "web_name": "Pereira",
+      "nett_transfers": 8799
+    },
+    {
+      "web_name": "James",
+      "nett_transfers": 8890
+    },
+    {
+      "web_name": "Cantwell",
+      "nett_transfers": 9111
+    },
+    {
+      "web_name": "van Dijk",
+      "nett_transfers": 9137
+    },
+    {
+      "web_name": "Willems",
+      "nett_transfers": 10113
+    },
+    {
+      "web_name": "Salah",
+      "nett_transfers": 10474
+    },
+    {
+      "web_name": "Schmeichel",
+      "nett_transfers": 10681
+    },
+    {
+      "web_name": "Dunk",
+      "nett_transfers": 13408
+    },
+    {
+      "web_name": "Shelvey",
+      "nett_transfers": 13509
+    },
+    {
+      "web_name": "Baldock",
+      "nett_transfers": 14600
+    },
+    {
+      "web_name": "S\u00f6y\u00fcnc\u00fc",
+      "nett_transfers": 15323
+    },
+    {
+      "web_name": "Abraham",
+      "nett_transfers": 15813
+    },
+    {
+      "web_name": "Guaita",
+      "nett_transfers": 16051
+    },
+    {
+      "web_name": "Evans",
+      "nett_transfers": 18565
+    },
+    {
+      "web_name": "Martial",
+      "nett_transfers": 19211
+    },
+    {
+      "web_name": "Ings",
+      "nett_transfers": 19546
+    },
+    {
+      "web_name": "Maddison",
+      "nett_transfers": 23164
+    },
+    {
+      "web_name": "Aurier",
+      "nett_transfers": 25038
+    },
+    {
+      "web_name": "Richarlison",
+      "nett_transfers": 25330
+    },
+    {
+      "web_name": "Grealish",
+      "nett_transfers": 32059
+    },
+    {
+      "web_name": "Vardy",
+      "nett_transfers": 38425
+    },
+    {
+      "web_name": "Kane",
+      "nett_transfers": 43839
+    },
+    {
+      "web_name": "Kelly",
+      "nett_transfers": 65303
+    },
+    {
+      "web_name": "Alli",
+      "nett_transfers": 68962
+    },
+    {
+      "web_name": "Son",
+      "nett_transfers": 121332
+    },
+    {
+      "web_name": "Rashford",
+      "nett_transfers": 137139
+    }
+  ],
+  {
+    "game_week": 16
+  }
+]
