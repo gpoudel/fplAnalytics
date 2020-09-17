@@ -1,0 +1,182 @@
+[
+  {
+    "Team": "Arsenal",
+    "Points": 82,
+    "Player 1": "Gabriel(15)",
+    "Player 2": "Willian(14)",
+    "Player 3": "Leno(7)",
+    "Player 4": "Lacazette(7)",
+    "Player 5": "Aubameyang(7)"
+  },
+  {
+    "Team": "Wolves",
+    "Points": 72,
+    "Player 1": "Sa\u00efss(15)",
+    "Player 2": "Coady(8)",
+    "Player 3": "Jim\u00e9nez(8)",
+    "Player 4": "Patr\u00edcio(6)",
+    "Player 5": "Boly(6)"
+  },
+  {
+    "Team": "Leicester",
+    "Points": 71,
+    "Player 1": "Castagne(14)",
+    "Player 2": "Vardy(13)",
+    "Player 3": "Justin(9)",
+    "Player 4": "Schmeichel(6)",
+    "Player 5": "Praet(6)"
+  },
+  {
+    "Team": "Newcastle",
+    "Points": 69,
+    "Player 1": "Hendrick(14)",
+    "Player 2": "Wilson(8)",
+    "Player 3": "Lewis(7)",
+    "Player 4": "Darlow(7)",
+    "Player 5": "Lascelles(6)"
+  },
+  {
+    "Team": "Everton",
+    "Points": 63,
+    "Player 1": "Digne(12)",
+    "Player 2": "Pickford(8)",
+    "Player 3": "Calvert-Lewin(8)",
+    "Player 4": "Coleman(6)",
+    "Player 5": "Keane(6)"
+  },
+  {
+    "Team": "Crystal Palace",
+    "Points": 59,
+    "Player 1": "Guaita(10)",
+    "Player 2": "Townsend(8)",
+    "Player 3": "Zaha(8)",
+    "Player 4": "Dann(7)",
+    "Player 5": "Mitchell(6)"
+  },
+  {
+    "Team": "Chelsea",
+    "Points": 56,
+    "Player 1": "James(14)",
+    "Player 2": "Jorginho(12)",
+    "Player 3": "Zouma(8)",
+    "Player 4": "Werner(5)",
+    "Player 5": "Arrizabalaga(2)"
+  },
+  {
+    "Team": "Liverpool",
+    "Points": 48,
+    "Player 1": "Salah(20)",
+    "Player 2": "van Dijk(7)",
+    "Player 3": "Fabinho(4)",
+    "Player 4": "Robertson(4)",
+    "Player 5": "Wijnaldum(2)"
+  },
+  {
+    "Team": "Leeds",
+    "Points": 42,
+    "Player 1": "Klich(9)",
+    "Player 2": "Harrison(7)",
+    "Player 3": "Bamford(7)",
+    "Player 4": "Phillips(5)",
+    "Player 5": "Costa(5)"
+  },
+  {
+    "Team": "Brighton",
+    "Points": 27,
+    "Player 1": "Trossard(8)",
+    "Player 2": "Lamptey(3)",
+    "Player 3": "Bissouma(2)",
+    "Player 4": "Alzate(2)",
+    "Player 5": "March(2)"
+  },
+  {
+    "Team": "Southampton",
+    "Points": 23,
+    "Player 1": "McCarthy(2)",
+    "Player 2": "Oriol Romeu(2)",
+    "Player 3": "Smallbone(2)",
+    "Player 4": "Bertrand(2)",
+    "Player 5": "Stephens(2)"
+  },
+  {
+    "Team": "Spurs",
+    "Points": 23,
+    "Player 1": "Lloris(3)",
+    "Player 2": "Dier(2)",
+    "Player 3": "Davies(2)",
+    "Player 4": "Alderweireld(2)",
+    "Player 5": "Doherty(2)"
+  },
+  {
+    "Team": "West Brom",
+    "Points": 19,
+    "Player 1": "Johnstone(2)",
+    "Player 2": "Furlong(2)",
+    "Player 3": "Livermore(2)",
+    "Player 4": "Sawyers(2)",
+    "Player 5": "Diangana(2)"
+  },
+  {
+    "Team": "Fulham",
+    "Points": 18,
+    "Player 1": "Reed(2)",
+    "Player 2": "Kebano(2)",
+    "Player 3": "Onomah(2)",
+    "Player 4": "Kamara(2)",
+    "Player 5": "Cavaleiro(2)"
+  },
+  {
+    "Team": "West Ham",
+    "Points": 18,
+    "Player 1": "Noble(2)",
+    "Player 2": "Rice(2)",
+    "Player 3": "Soucek(2)",
+    "Player 4": "Antonio(2)",
+    "Player 5": "Bowen(2)"
+  },
+  {
+    "Team": "Sheffield Utd",
+    "Points": 16,
+    "Player 1": "Norwood(2)",
+    "Player 2": "Lundstram(2)",
+    "Player 3": "Sharp(2)",
+    "Player 4": "Fleck(2)",
+    "Player 5": "Basham(1)"
+  },
+  {
+    "Team": "Aston Villa",
+    "Points": 0,
+    "Player 1": "Steer(0)",
+    "Player 2": "Nyland(0)",
+    "Player 3": "Mart\u00ednez(0)",
+    "Player 4": "Heaton(0)",
+    "Player 5": "El Mohamady(0)"
+  },
+  {
+    "Team": "Burnley",
+    "Points": 0,
+    "Player 1": "Gibson(0)",
+    "Player 2": "Peacock-Farrell(0)",
+    "Player 3": "Dunne(0)",
+    "Player 4": "Thomas(0)",
+    "Player 5": "Bardsley(0)"
+  },
+  {
+    "Team": "Man City",
+    "Points": 0,
+    "Player 1": "Bravo(0)",
+    "Player 2": "Doyle(0)",
+    "Player 3": "Otamendi(0)",
+    "Player 4": "Stones(0)",
+    "Player 5": "Garcia(0)"
+  },
+  {
+    "Team": "Man Utd",
+    "Points": 0,
+    "Player 1": "Mengi(0)",
+    "Player 2": "Tuanzebe(0)",
+    "Player 3": "Fosu-Mensah(0)",
+    "Player 4": "Chong(0)",
+    "Player 5": "Garner(0)"
+  }
+]
