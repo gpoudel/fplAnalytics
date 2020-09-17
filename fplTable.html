@@ -302,6 +302,7 @@
         //"https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json",
         dataSrc: "",
       },
+      order: [[2, "desc"]],
       columns: [
         { data: "Team" },
         { data: "Points" },
@@ -311,34 +312,6 @@
         { data: "Player 4" },
         { data: "Player 5" },
       ],
-
-      rowCallback: function (row, data, index) {
-        if (data.cost_change_start > "0") {
-          $("td:eq(4)", row).css("font-weight", "bold");
-          $("td:eq(4)", row).css("color", "green");
-        }
-        if (data.cost_change_start < "0") {
-          $("td:eq(4)", row).css("font-weight", "bold");
-          $("td:eq(4)", row).css("color", "red");
-        }
-        if (data.cost_change_start == "0") {
-          $("td:eq(4)", row).css("font-weight", "bold");
-          $("td:eq(4)", row).css("color", "blue");
-        }
-
-        if (data.cost_change_event == "0") {
-          $("td:eq(5)", row).css("font-weight", "bold");
-          $("td:eq(5)", row).css("color", "blue");
-        }
-        if (data.cost_change_event > "0") {
-          $("td:eq(5)", row).css("font-weight", "bold");
-          $("td:eq(5)", row).css("color", "green");
-        }
-        if (data.cost_change_event < "0") {
-          $("td:eq(5)", row).css("font-weight", "bold");
-          $("td:eq(5)", row).css("color", "red");
-        }
-      },
     });
   });
 </script>
