@@ -1,0 +1,29 @@
+[
+  {
+    "team": "ARS",
+	"TotalPts": 200,
+    "Player1": "abc(45)",
+	"Player2": "abc(45)",
+	"Player3": "abc(45)",
+	"Player4": "abc(45)",
+	"Player5": "abc(45)"    
+  },
+  {
+    "team": "LIV",
+	"TotalPts": 200,
+    "Player1": "abc(45)",
+	"Player2": "abc(45)",
+	"Player3": "abc(45)",
+	"Player4": "abc(45)",
+	"Player5": "abc(45)"    
+  },
+  {
+    "team": "MCI",
+	"TotalPts": 200,
+    "Player1": "abc(45)",
+	"Player2": "abc(45)",
+	"Player3": "abc(45)",
+	"Player4": "abc(45)",
+	"Player5": "abc(45)"    
+  }
+]
