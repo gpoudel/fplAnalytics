@@ -298,8 +298,7 @@
   $(document).ready(function () {
     var myTable = $("#data-table").DataTable({
       ajax: {
-        url: "db/fpl_table.json",
-        //"https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json",
+        url: "https://s3.eu-central-1.amazonaws.com/fpl.data/db/fplTable.json",
         dataSrc: "",
       },
       order: [[1, "desc"]], //sorts by col1 i.e Points
