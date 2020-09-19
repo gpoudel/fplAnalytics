@@ -1,336 +1,403 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="colorlib">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Players' Value Change | fplAnalytics</title>
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+  <head>
+    <!-- Mobile Specific Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png" />
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib" />
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+    <!-- meta character set -->
+    <meta charset="UTF-8" />
+    <!-- Site Title -->
+    <title>Players' Value Change | fplAnalytics</title>
 
-		<script src="js/vendor/jquery-2.2.4.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="js/vendor/bootstrap.min.js"></script>			
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-		<script src="js/easing.min.js"></script>			
-		<script src="js/hoverIntent.js"></script>
-		<script src="js/superfish.min.js"></script>	
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>	
-		<script src="js/owl.carousel.min.js"></script>			
-		<script src="js/jquery.sticky.js"></script>
-		<script src="js/jquery.nice-select.min.js"></script>			
-		<script src="js/parallax.min.js"></script>	
-		<script src="js/mail-script.js"></script>				
-		<script src="js/main.js"></script>	
-		
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"
+    ></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
 
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+      rel="stylesheet"
+    />
+    <!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/nice-select.css">			
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-			<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"/>
-	</head>
-			
-	<body>
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.4/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
 
-		<header id="header" id="home">
-		    <div class="container">
-		    	<div class="row align-items-center justify-content-between d-flex">
-				  <div id="logo">
-				    <a href="index.html"><img src="img/fav.png"  class="rounded-circle" width="40" height="40" alt="" title="" /></a>
-				  </div>
+  <body>
+    <header id="header" id="home">
+      <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
+          <div id="logo">
+            <a href="index.html"
+              ><img
+                src="img/fav.png"
+                class="rounded-circle"
+                width="40"
+                height="40"
+                alt=""
+                title=""
+            /></a>
+          </div>
 
-				  <nav id="nav-menu-container">
-			        <ul class="nav-menu">			       
-					  <li class="menu-has-children"><a href="">Data</a>
-						<ul>
-							<li><a href="playerStatus.html">Players' performance DB</a></li>		
-							<li><a href="fdr.html">Fixtures Difficulty Ratings</a></li>
-							<li><a href="priceTable.html">Price changes & Transfers</a></li>
-							<li><a href="ICTtable.html">ICT Table</a></li>
-							<li><a href="InjuryWatch.html">Injury/Suspensions Watch</a></li>
-							<li><a href="ptsBreakdown.html">Points Breakdown</a></li>							  
-						  </ul>
-					  </li>
-					  
-					  <li class="menu-has-children"><a href="">Vizs</a>
-						<ul>
-							<li><a href="ICT.html">ICT Value Analysis</a></li>		
-							<li><a href="PointsPerMillionCost.html">Pts. per Cost</a></li>
-							<li><a href="TransferAnomaly.html">Transfer Anomaly Detection</a></li>
-							<li><a href="NettTransfers.html">Nett. Transfers - GW</a></li>
-							<li><a href="treeMap.html">Points Distribution Treemap</a></li>		
-							<li><a href="PointsPGPMC.html">Pts. per Game per Cost</a></li>
-							<li><a href="PlayerValueChangeSeason.html">Players' value change - season</a></li>						  
-						  </ul>					  
-					  </li>
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-has-children">
+                <a href="">Data</a>
+                <ul>
+                  <li>
+                    <a href="playerStatus.html">Players' performance DB</a>
+                  </li>
+                  <li><a href="fdr.html">Fixtures Difficulty Ratings</a></li>
+                  <li>
+                    <a href="priceTable.html">Price changes & Transfers</a>
+                  </li>
+                  <li>
+                    <a href="fplTable.html">fpl Points Leaderboard</a>
+                  </li>
+                  <li><a href="ICTtable.html">ICT Table</a></li>
+                  <li>
+                    <a href="InjuryWatch.html">Injury/Suspensions Watch</a>
+                  </li>
+                  <li><a href="ptsBreakdown.html">Points Breakdown</a></li>
+                </ul>
+              </li>
 
-					  <li class="menu-has-children"><a href="">Tools</a>
-						<ul>
-							<li><a href="compareRank.html">Compare Global Rank</a></li>													  
-						  </ul>				
-					  </li>
-					  					 
-					  <li class="menu-has-children"><a href="">History</a>
-						<ul>
-							<li><a href="history1920.html">Season 2019/20</a></li>
-							<li><a href="history1819.html">Season 2018/19</a></li>		
-							<li><a href="history1718.html">Season 2017/18</a></li>
-							<li><a href="history1617.html">Season 2016/17</a></li>
-							<li><a href="history1516.html">Season 2015/16</a></li>
-							<li><a href="history1415.html">Season 2014/15</a></li>		
-							<li><a href="history1314.html">Season 2013/14</a></li>
-							<li><a href="history1213.html">Season 2012/13</a></li>						  
-						</ul>	
- 					  </li>			         
-					  					 
-					   <li class="menu-has-children"><a href="">More</a>
-			            <ul>
-			              <li><a href="fleagues.html">Featured Leagues</a></li>			             
-			            </ul>
-					  </li>
-					  
-			        </ul>
-				  </nav><!-- #nav-menu-container -->		
-				  
-		    	</div>
-		    </div>
-		  </header><!-- #header -->	
+              <li class="menu-has-children">
+                <a href="">Vizs</a>
+                <ul>
+                  <li><a href="ICT.html">ICT Value Analysis</a></li>
+                  <li><a href="PointsPerMillionCost.html">Pts. per Cost</a></li>
+                  <li>
+                    <a href="TransferAnomaly.html"
+                      >Transfer Anomaly Detection</a
+                    >
+                  </li>
+                  <li><a href="NettTransfers.html">Nett. Transfers - GW</a></li>
+                  <li>
+                    <a href="treeMap.html">Points Distribution Treemap</a>
+                  </li>
+                  <li><a href="PointsPGPMC.html">Pts. per Game per Cost</a></li>
+                  <li>
+                    <a href="PlayerValueChangeSeason.html"
+                      >Players' value change - season</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
+              <li class="menu-has-children">
+                <a href="">Tools</a>
+                <ul>
+                  <li><a href="compareRank.html">Compare Global Rank</a></li>
+                </ul>
+              </li>
 
+              <li class="menu-has-children">
+                <a href="">History</a>
+                <ul>
+                  <li><a href="history1920.html">Season 2019/20</a></li>
+                  <li><a href="history1819.html">Season 2018/19</a></li>
+                  <li><a href="history1718.html">Season 2017/18</a></li>
+                  <li><a href="history1617.html">Season 2016/17</a></li>
+                  <li><a href="history1516.html">Season 2015/16</a></li>
+                  <li><a href="history1415.html">Season 2014/15</a></li>
+                  <li><a href="history1314.html">Season 2013/14</a></li>
+                  <li><a href="history1213.html">Season 2012/13</a></li>
+                </ul>
+              </li>
 
-		  <!-- Start banner Area - template -->		  
-		  <section class="section-gap">					
-			<div class="container-fluid text-center" style="background-color:#02894e;color:#38003C">  
-				<h3>Players' Value Change</h3> 				
-	 			<a class="fab fa-facebook-square btn" style="font-size:24px;color:#38003C" href="https://www.facebook.com/fplAnalytics" target="_blank" role="button"></a>
-	 			<a class="fab fa-twitter-square btn" style="font-size:24px;color:#38003C" href="https://twitter.com/fplAnalytics" target="_blank" role="button"></a>	
-  			</div>	
-		  </section>								
-		  <!-- End banner Area - template -->
-		  
+              <li class="menu-has-children">
+                <a href="">More</a>
+                <ul>
+                  <li><a href="fleagues.html">Featured Leagues</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
+        </div>
+      </div>
+    </header>
+    <!-- #header -->
 
-			
-					  			
-			<!-- Start plot Area -->
-			<section class="testomial-area">
-				<div class="container">
-					<div class="row d-flex justify-content-center">					
-					  <div id="myDiv" style="width: 100%; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
-					</div>							
-				</div>	
-			</section>
-			<!-- End plot Area -->
+    <!-- Start banner Area - template -->
+    <section class="section-gap">
+      <div
+        class="container-fluid text-center"
+        style="background-color: #02894e; color: #38003c"
+      >
+        <h3>Players' Value Change</h3>
+        <a
+          class="fab fa-facebook-square btn"
+          style="font-size: 24px; color: #38003c"
+          href="https://www.facebook.com/fplAnalytics"
+          target="_blank"
+          role="button"
+        ></a>
+        <a
+          class="fab fa-twitter-square btn"
+          style="font-size: 24px; color: #38003c"
+          href="https://twitter.com/fplAnalytics"
+          target="_blank"
+          role="button"
+        ></a>
+      </div>
+    </section>
+    <!-- End banner Area - template -->
 
-					
+    <!-- Start plot Area -->
+    <section class="testomial-area">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div id="myDiv" style="width: 100%; height: 600px">
+            <!-- Plotly chart will be drawn inside this DIV -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End plot Area -->
 
-			<!-- start footer Area -->
-			<footer class="small-footer-gap">
-				<div class="container-fluid" style="background-color:#38003C;color:white">     
-				  <p class="text-center">© fplAnalytics.com 2015</p>
-				</div>
-			</footer>
-			<!-- End footer Area -->
+    <!-- start footer Area -->
+    <footer class="small-footer-gap">
+      <div
+        class="container-fluid"
+        style="background-color: #38003c; color: white"
+      >
+        <p class="text-center">© fplAnalytics.com 2015</p>
+      </div>
+    </footer>
+    <!-- End footer Area -->
 
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <div class="d-flex justify-content-center">
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 100%; height: 90px"
+              data-ad-client="ca-pub-4920612207674722"
+            ></ins>
+            <script
+              async
+              src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            ></script>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
 
-			
-			<div class="container-fluid">
-				<div class="row mb-2">	
-	  
-	 				<div class="col-sm-6">
-							<div class="d-flex justify-content-center">
-									<ins class="adsbygoogle"				   							
-										   style="display:inline-block;width:100%;height:90px"
-										data-ad-client="ca-pub-4920612207674722"
-									></ins>   				
-									<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-									<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-								 </div>
-	 				</div>
- 
-	 				<div class="col-sm-6">
-							<div class="d-flex justify-content-center">
-									<ins class="adsbygoogle"				   							
-										   style="display:inline-block;width:100%;height:90px"
-										data-ad-client="ca-pub-4920612207674722"
-									></ins>   				
-									<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-									<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-								 </div>
-	 				</div>	
-				 
-	  			</div>
-			</div>	
-	
+        <div class="col-sm-6">
+          <div class="d-flex justify-content-center">
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 100%; height: 90px"
+              data-ad-client="ca-pub-4920612207674722"
+            ></ins>
+            <script
+              async
+              src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            ></script>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
-		</body>
-	</html>
+<script>
+  $.getJSON(
+    "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json",
+    function (json) {
+      //console.log( "JSON Data: " + json[1].web_name);
 
+      var mid_cost_now = [];
+      var mid_cost_change_start = [];
+      var mid_web_name = [];
+      var mid_htext = [];
 
-	<script>
+      var fwd_cost_now = [];
+      var fwd_cost_change_start = [];
+      var fwd_web_name = [];
+      var fwd_htext = [];
 
-		$.getJSON( "https://s3.eu-central-1.amazonaws.com/fpl.data/db/playerStatus.json", function(json) {
-		  //console.log( "JSON Data: " + json[1].web_name);
-		  
-		   
-			var mid_cost_now = [];
-			var mid_cost_change_start = [];
-			var mid_web_name = [];	
-			var mid_htext = [];
-			
-			var fwd_cost_now = [];
-			var fwd_cost_change_start = [];
-			var fwd_web_name = [];	
-			var fwd_htext = [];
-			
-			var def_cost_now = [];
-			var def_cost_change_start = [];
-			var def_web_name = [];	
-			var def_htext = [];
-			
-			var gkp_cost_now = [];
-			var gkp_cost_change_start = [];
-			var gkp_web_name = [];	
-			var gkp_htext = [];
-			
-			
-		
-			for(var i = 0; i < json.length; i++) {
-				
-				if (json[i].position == "MID" & json[i].cost_change_start != 0) {
-				mid_cost_now.push(json[i].now_cost * 3);    
-				mid_cost_change_start.push(json[i].cost_change_start);    
-				mid_web_name.push(json[i].web_name);  
-				mid_htext.push(json[i].web_name + " : " + json[i].cost_change_start);
-				}
-					
-				if (json[i].position == "FWD" & json[i].cost_change_start != 0) {
-				fwd_cost_now.push(json[i].now_cost * 3);    
-				fwd_cost_change_start.push(json[i].cost_change_start);    
-				fwd_web_name.push(json[i].web_name);
-				fwd_htext.push(json[i].web_name + " : " + json[i].cost_change_start);
-				}
-			
-				if (json[i].position == "DEF" & json[i].cost_change_start != 0) {
-				def_cost_now.push(json[i].now_cost * 3);    
-				def_cost_change_start.push(json[i].cost_change_start);    
-				def_web_name.push(json[i].web_name);
-				def_htext.push(json[i].web_name + " : " + json[i].cost_change_start);
-				}
-					
-				if (json[i].position == "GKP" & json[i].cost_change_start != 0) {
-				gkp_cost_now.push(json[i].now_cost * 3);    
-				gkp_cost_change_start.push(json[i].cost_change_start);    
-				gkp_web_name.push(json[i].web_name);
-				gkp_htext.push(json[i].web_name + " : " + json[i].cost_change_start);
-				}
-			}
-			
-		
-				
-			var trace1 = {
-				//x: mid_web_name,
-				x: mid_cost_change_start,		
-				mode: 'markers',
-				name: 'MID',	
-				text: mid_htext, 
-				marker: {
-					size: mid_cost_now,
-					color: '#33cc33',			
-					}
-				};
-				
-			var trace2 = {
-				//x: fwd_web_name,
-				x: fwd_cost_change_start,		
-				mode: 'markers',
-				name: 'FWD',	
-				text: fwd_htext, 
-				marker: {
-					size: fwd_cost_now,
-					color: '#ff00ff',			
-					}
-				};
-		
-			var trace3 = {
-				//x: def_web_name,
-				x: def_cost_change_start,		
-				mode: 'markers',
-				name: 'DEF',	
-				text: def_htext, 
-				marker: {
-					size: def_cost_now,
-					color: '#ff0000',			
-					}
-				};
-				
-			var trace4 = {
-				//x: gkp_web_name,
-				x: gkp_cost_change_start,		
-				mode: 'markers',
-				name: 'GKP',	
-				text: gkp_htext, 
-				marker: {
-					size: gkp_cost_now,
-					color: '#0099ff',			
-					}
-				};
-				
-		
-			var data = [trace1, trace2, trace3, trace4];
-		
-			var layout = {
-				title: "Players' value change - Season",
-				showlegend: true,
-					xaxis: {
-						title: 'Cost change',
-						showgrid: true,
-						zeroline: false
-						},
-					yaxis: {
-						title: '',
-						showgrid: false,
-						showline: false
-					},
-				hovermode: 'closest'
-				
-				};
-		
-		Plotly.newPlot('myDiv', data, layout);
-			
-			
-				
-		 });
-		 
-		</script>
-		 
-		 
+      var def_cost_now = [];
+      var def_cost_change_start = [];
+      var def_web_name = [];
+      var def_htext = [];
+
+      var gkp_cost_now = [];
+      var gkp_cost_change_start = [];
+      var gkp_web_name = [];
+      var gkp_htext = [];
+
+      for (var i = 0; i < json.length; i++) {
+        if ((json[i].position == "MID") & (json[i].cost_change_start != 0)) {
+          mid_cost_now.push(json[i].now_cost * 3);
+          mid_cost_change_start.push(json[i].cost_change_start);
+          mid_web_name.push(json[i].web_name);
+          mid_htext.push(json[i].web_name + " : " + json[i].cost_change_start);
+        }
+
+        if ((json[i].position == "FWD") & (json[i].cost_change_start != 0)) {
+          fwd_cost_now.push(json[i].now_cost * 3);
+          fwd_cost_change_start.push(json[i].cost_change_start);
+          fwd_web_name.push(json[i].web_name);
+          fwd_htext.push(json[i].web_name + " : " + json[i].cost_change_start);
+        }
+
+        if ((json[i].position == "DEF") & (json[i].cost_change_start != 0)) {
+          def_cost_now.push(json[i].now_cost * 3);
+          def_cost_change_start.push(json[i].cost_change_start);
+          def_web_name.push(json[i].web_name);
+          def_htext.push(json[i].web_name + " : " + json[i].cost_change_start);
+        }
+
+        if ((json[i].position == "GKP") & (json[i].cost_change_start != 0)) {
+          gkp_cost_now.push(json[i].now_cost * 3);
+          gkp_cost_change_start.push(json[i].cost_change_start);
+          gkp_web_name.push(json[i].web_name);
+          gkp_htext.push(json[i].web_name + " : " + json[i].cost_change_start);
+        }
+      }
+
+      var trace1 = {
+        //x: mid_web_name,
+        x: mid_cost_change_start,
+        mode: "markers",
+        name: "MID",
+        text: mid_htext,
+        marker: {
+          size: mid_cost_now,
+          color: "#33cc33",
+        },
+      };
+
+      var trace2 = {
+        //x: fwd_web_name,
+        x: fwd_cost_change_start,
+        mode: "markers",
+        name: "FWD",
+        text: fwd_htext,
+        marker: {
+          size: fwd_cost_now,
+          color: "#ff00ff",
+        },
+      };
+
+      var trace3 = {
+        //x: def_web_name,
+        x: def_cost_change_start,
+        mode: "markers",
+        name: "DEF",
+        text: def_htext,
+        marker: {
+          size: def_cost_now,
+          color: "#ff0000",
+        },
+      };
+
+      var trace4 = {
+        //x: gkp_web_name,
+        x: gkp_cost_change_start,
+        mode: "markers",
+        name: "GKP",
+        text: gkp_htext,
+        marker: {
+          size: gkp_cost_now,
+          color: "#0099ff",
+        },
+      };
+
+      var data = [trace1, trace2, trace3, trace4];
+
+      var layout = {
+        title: "Players' value change - Season",
+        showlegend: true,
+        xaxis: {
+          title: "Cost change",
+          showgrid: true,
+          zeroline: false,
+        },
+        yaxis: {
+          title: "",
+          showgrid: false,
+          showline: false,
+        },
+        hovermode: "closest",
+      };
+
+      Plotly.newPlot("myDiv", data, layout);
+    }
+  );
+</script>
+
 <!-- google analytics script -->
 <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-82390542-1', 'auto');
-	ga('send', 'pageview');
-
- </script>			 
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    (i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date());
+    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga"
+  );
+  ga("create", "UA-82390542-1", "auto");
+  ga("send", "pageview");
+</script>
